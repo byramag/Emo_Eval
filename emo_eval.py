@@ -35,15 +35,15 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 t0 = time()
 
-# Taking arg of file name, if no arg given, assumes 
-file_name = 'data/train.txt'
+# Taking arg of file name, if no arg given, assumes train file is in the same directory
+file_name = r"data/train.txt"
 if len(sys.argv) > 1:
     file_name = sys.argv[1]
 
 # reading training file into dataframe
 print("Reading train file")
 t = time()
-instances = pd.read_csv('train.txt', sep='\t', header=0)
+instances = pd.read_csv(file_name, sep='\t', header=0)
 print("Finished reading train file in %0.3fsec\n" % (time()-t))
 
 # Separating the labels and strings into separate arrays & concatenating turns from bag of words
@@ -135,6 +135,7 @@ precision_rf = precision_score(y_true, y_pred_rf, average='macro')
 recall_rf = recall_score(y_true, y_pred_rf, average='macro')
 f1_rf = f1_score(y_true, y_pred_rf, average='macro')
 print("RF:\n\tAccuracy: %s\n\tPrecision: %s\n\tRecall: %s\n\tF1-Score: %s\n" % (accuracy_rf, precision_rf, recall_rf, f1_rf))
+print("Micro averaged F1-Score: %s\n" % (f1_score(y_true, y_pred_rf, average='micro')))
 
 # Evaluating SVM metrics
 print("Predicting SVM test instances\n")
@@ -147,5 +148,6 @@ precision_svm = precision_score(y_true, y_pred_svm, average='macro')
 recall_svm = recall_score(y_true, y_pred_svm, average='macro')
 f1_svm = f1_score(y_true, y_pred_svm, average='macro')
 print("SVM:\n\tAccuracy: %s\n\tPrecision: %s\n\tRecall: %s\n\tF1-Score: %s\n" % (accuracy_svm, precision_svm, recall_svm, f1_svm))
+print("Micro averaged F1-Score: %s\n" % (f1_score(y_true, y_pred_svm, average='micro')))
 
 print("Total time for pipeline: %0.3fsec\n" % (time()-t0))
