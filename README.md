@@ -46,7 +46,7 @@ You can run the program by executing the command `bash runit.sh` from the projec
 ## Team members
 
 - Abbie Byram
-  - details
+  - Wrote emo_eval.py, researched best classifier options for this problem, evaluated results from various features and model parameters
 - Bobby Best
   - Handled install & execution scripts, along with README and other repo organization
 - Revathi Keerthi
