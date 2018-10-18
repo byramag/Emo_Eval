@@ -50,4 +50,4 @@ You can run the program by executing the command `bash runit.sh` from the projec
 - Bobby Best
   - Handled install & execution scripts, along with README and other repo organization
 - Revathi Keerthi
-  - details
+  - Did some research on this task and prepared slides for stage1 presentation
