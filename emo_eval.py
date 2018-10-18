@@ -1,3 +1,7 @@
+"""
+Author: Abbie Byram
+"""
+
 #        -- TODO --
 # - x-fold cross validation
 # - dimensionality reduction (fix)

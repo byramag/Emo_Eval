@@ -37,18 +37,17 @@ This project requires Python version 3.5 or greater, download the latest version
 ## Install
 
 All installation steps are handled by running the included script `install.sh`.  
-This will create a Python virtual environment in the `./venv` directory and install all required packages into it.
+This will create a Python virtual environment in the `./venv` directory and install all required packages into it. Run the script on the command line by navigating to the project directory and running the command `bash install.sh`
 
 ## Run
 
-`runit.sh`
+You can run the program by executing the command `bash runit.sh` from the project directory.
 
 ## Team members
 
-**Need to add details on what everyone did**
 - Abbie Byram
   - details
 - Bobby Best
-  - details
+  - Handled install & execution scripts, along with README and other repo organization
 - Revathi Keerthi
   - details

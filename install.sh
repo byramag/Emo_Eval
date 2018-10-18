@@ -1,3 +1,8 @@
+# Author: Robert Best
+# Description: Runs all installation steps for the project; First
+#   verifies the user has Python 3 installed, then generates a
+#   virtual environment and installs all dependencies into it
+
 # Confirm user has Python 3 installed
 p=''
 if [ -z $(command -v python3) ]; then
