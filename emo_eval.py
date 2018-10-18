@@ -43,7 +43,7 @@ if len(sys.argv) > 1:
 # reading training file into dataframe
 print("Reading train file")
 t = time()
-instances = pd.read_csv('train.txt', sep='\t', header=0)
+instances = pd.read_csv(file_name, sep='\t', header=0)
 print("Finished reading train file in %0.3fsec\n" % (time()-t))
 
 # Separating the labels and strings into separate arrays & concatenating turns from bag of words
