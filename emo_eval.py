@@ -70,17 +70,17 @@ def evaluate(pred, gold):
     print("----------------------------------------------------------------")
 
 
-def main():
-    # Taking arg of file name, if no arg given, assumes train file is in the same directory
-    file_name = r"data/train.txt"
-    if len(sys.argv) > 1:
-        file_name = sys.argv[1]
-
+def main(train_file, sample_size=1):
     # Reading training file into dataframe
     print("Reading train file")
     t = time()
     instances = pd.read_csv(file_name, sep='\t', header=0)
     print("Finished reading train file in %0.3fsec\n" % (time()-t))
+
+    print("Sampling training data")
+    t = time()
+    instances = instances.sample(frac=sample_size)
+    print("Finished sampling training data in %0.3fsec\n" % (time()-t))
 
     x_train, x_test, y_train, y_test = preprocess(instances)
 
@@ -136,5 +136,15 @@ def main():
 
 if __name__ == '__main__':
     t = time()
-    main()
+
+    # Taking arg of file name, if no arg given, assumes train file is in the `data/` directory
+    file_name = r"data/train.txt"
+    sample_size = 1
+    if len(sys.argv) > 1:
+        file_name = sys.argv[1]
+    if len(sys.argv) > 2:
+        sample_size = float(sys.argv[2])
+    
+    main(file_name, sample_size=sample_size)
+
     print("Total time for pipeline: %0.3fsec\n" % (time()-t))
