@@ -21,8 +21,9 @@ Author: Abbie Byram
 
 import re, sys
 from time import time
+import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_validate
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import PCA, TruncatedSVD
@@ -30,7 +31,7 @@ from sklearn import svm
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.ensemble import RandomForestClassifier
 from pandas_ml import ConfusionMatrix
-from sklearn.metrics import accuracy_score, confusion_matrix, precision_recall_fscore_support
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 # import spacy
 # import en_core_web_sm
@@ -42,28 +43,21 @@ def preprocess(instances):
     """TODO: documentation
     """
     # Separating the labels and strings into separate arrays & concatenating turns from bag of words
-    print("Preprocessing data")
-    t = time()
     row_strings = []
     labels = []
-    for index, instance in instances.iterrows():
+    for _, instance in instances.iterrows():
         row_strings.append(instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3'])
         labels.append(instance['label'])
 
-    print("Finished preprocessing in %0.3fsec\n" % (time()-t))
-    # 60/40 split of training and test data
-    return train_test_split(row_strings, labels, test_size=0.4, random_state=0)
+    return row_strings, labels
 
 
-def feature_selection(x_train, x_test):
+def feature_extraction(samples):
+    """TODO: documentation
+    """
     # Creating bag of words feature vectors from training and test data
-    print("Creating feature vectors")
-    t = time()
     # countBoW = CountVectorizer() # add stopword removal or ngrams with: ngram_range=(1,2), stop_words='english'
-    tfidfBoW = TfidfVectorizer(ngram_range=(1,2))
-    x_train_mat = tfidfBoW.fit_transform(x_train)
-    x_test_mat = tfidfBoW.transform(x_test)
-    print("Creating feature vectors finished in %0.3fsec\n" % (time()-t))
+    x_train_mat = TfidfVectorizer(ngram_range=(1,2)).fit_transform(samples)
 
     # # Dimensionality reduction - THIS CURRENTLY GIVES BAD RESULTS
     # print("Dimensionality reduction")
@@ -78,10 +72,15 @@ def feature_selection(x_train, x_test):
 
     # print (pd.DataFrame(data=x_train_mat.toarray(), columns=tfidfBoW.get_feature_names()))
 
-    return x_train_mat, x_test_mat
+    return x_train_mat
 
 
-def train(x_train, x_test, y_train, y_test):
+def train_crossval(x_train, y_train, folds=5):
+    """TODO: documentation
+    """
+    scoring = ['accuracy', 'precision_macro', 'recall_macro', 'f1_macro']
+    metrics = dict()
+
     # # Training Naive Bayes on training data # CURRENTLY CAUSES MEMORY ERROR
     # print("Training Naive Bayes")
     # t = time()
@@ -90,76 +89,43 @@ def train(x_train, x_test, y_train, y_test):
 
     print("Training Random Forest")
     t = time()
-    rfClassifier = RandomForestClassifier(n_estimators=100, random_state=0).fit(x_train, y_train)
+    rfClassifier = RandomForestClassifier(n_estimators=100, random_state=0)#.fit(x_train, y_train)
+    metrics['RF'] = cross_validate(rfClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False)
     print("Training Random Forest finished in %0.3fsec\n" % (time()-t))
 
     print("Training SVM")
     t = time()
-    svmClassifier = svm.SVC(kernel='linear', C=1).fit(x_train, y_train)
+    svmClassifier = svm.SVC(kernel='linear', C=1)#.fit(x_train, y_train)
+    metrics['SVM'] = cross_validate(svmClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False)
     print("Training SVM finished in %0.3fsec\n" % (time()-t))
 
-    metrics = dict()
-
-    # print("Predicting NB test instances\n")
-    # metrics['NB'] = evaluate(nbClassifier.predict(x_test_mat), y_test)
-
-    print("Predicting RF test instances\n")
-    metrics['RF'] = evaluate(rfClassifier.predict(x_test), y_test)
-
-    print("Predicting SVM test instances\n")
-    metrics['SVM'] = evaluate(svmClassifier.predict(x_test), y_test)
+    for model in metrics:
+        for metric in metrics[model]:
+            metrics[model][metric] = np.mean(metrics[model][metric])
 
     return metrics
 
 
-def evaluate(pred, gold):
-    """TODO: documentation
-    """
-    confusion_matrix = ConfusionMatrix(gold, pred)
-    # print("Confusion matrix:\n%s\n" % confusion_matrix)
-
-    accuracy = accuracy_score(gold, pred)
-    precision, recall, f1, _ = precision_recall_fscore_support(gold, pred, average='macro')
-    # print("\tAccuracy: %s\n\tPrecision: %s\n\tRecall: %s\n\tF1-Score: %s\n" % (accuracy, precision, recall, f1))
-    # print("Micro averaged F1-Score: %s" % (f1_score(gold, pred, average='micro')))
-    # print("----------------------------------------------------------------")
-    return {
-        'acc': accuracy,
-        'precision': precision,
-        'recall': recall,
-        'f1': f1
-    }
-
-
 def main(train_file, sample_size=1, folds=5):
     # Reading training file into dataframe
-    print("Reading train file")
-    t = time()
+    print("Reading train file"); t = time()
     instances = pd.read_csv(file_name, sep='\t', header=0)
     print("Finished reading train file in %0.3fsec\n" % (time()-t))
 
-    print("Sampling training data")
-    t = time()
+    print("Sampling training data"); t = time()
     instances = instances.sample(frac=sample_size)
     print("Finished sampling training data in %0.3fsec\n" % (time()-t))
 
-    x_train, x_test, y_train, y_test = preprocess(instances)
+    print("Preprocessing data"); t = time()
+    x_all, y_all = preprocess(instances)
+    print("Finished preprocessing in %0.3fsec\n" % (time()-t))
 
-    x_train, x_test = feature_selection(x_train, x_test)
+    print("Creating feature vectors"); t = time()
+    x_all = feature_extraction(x_all)
+    print("Creating feature vectors finished in %0.3fsec\n" % (time()-t))
 
-    # Cross validation
-    metrics = None
-    for _ in range(folds):
-        fold_results = train(x_train, x_test, y_train, y_test)
-        if metrics is None:
-            metrics = fold_results
-        else:
-            for model in metrics:
-                for metric in metrics[model]:
-                    metrics[model][metric] += fold_results[model][metric]
-    for model in metrics:
-        for metric in metrics[model]:
-            metrics[model][metric] /= folds
+    metrics = train_crossval(x_all, y_all, folds)
+
     print(metrics)
 
 if __name__ == '__main__':
