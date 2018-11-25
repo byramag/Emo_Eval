@@ -10,7 +10,13 @@ def preprocess(instances):
     row_strings = []
     labels = []
     for _, instance in instances.iterrows():
-        row_strings.append(instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3'])
+        bow = instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3']
+        bow = re.sub(r"\.{2,}", "\.\.\.", bow) # Separate/truncate elipsis into their own tokens
+        bow = re.sub(r"!{2,}", " ! ", bow) # Separate/truncate ! into their own tokens
+        bow = re.sub(r"\?{2,}", " ? ", bow) # Separate/truncate ? into their own tokens
+        bow = re.sub(r"(?<!\.)\.(?!\.)", "", bow) # Remove periods
+        bow = re.sub(r"[,\*]", "", bow)
+        row_strings.append(bow)
         labels.append(instance['label'])
     
     with open('abbreviations.json', 'r') as abbr_data: 
