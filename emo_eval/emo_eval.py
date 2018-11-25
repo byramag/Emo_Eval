@@ -3,9 +3,7 @@ Author: Abbie Byram
 """
 
 #        -- TODO --
-# - x-fold cross validation
 # - dimensionality reduction (fix)
-# - alternative weighting
 # - adding features
 #   - pinpoint emojis
 #   - differentiate between turns
@@ -13,16 +11,13 @@ Author: Abbie Byram
 #   - find emotional words
 # - other classifiers
 #   - Naive Bayes baseline
-#   - Random forest
 #   - Neural Network
-#   - different SVM kernel
-
-# DEPENDENCIES: sklearn, pandas, pandas_ml, spacy
 
 import re, sys, json
 from time import time
 import numpy as np
 import pandas as pd
+from pprint import pprint
 from sklearn.model_selection import train_test_split, cross_validate, cross_val_score
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.decomposition import PCA, TruncatedSVD
@@ -102,22 +97,21 @@ def train_crossval(x_train, y_train, folds=5):
 
     print("Training Random Forest")
     t = time()
-    rfClassifier = RandomForestClassifier(n_estimators=100, random_state=0)#.fit(x_train, y_train)
+    rfClassifier = RandomForestClassifier(n_estimators=100, random_state=0)
     metrics['RF'] = cross_validate(rfClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False, n_jobs=10)
     print("Training Random Forest finished in %0.3fsec\n" % (time()-t))
 
-    print("Training SVM")
+    print("Training Linear SVM")
     t = time()
-    svmClassifier = svm.SVC(kernel='linear', C=1)#.fit(x_train, y_train)
-    metrics['SVM'] = cross_validate(svmClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False, n_jobs=-1)
-    print("Training SVM finished in %0.3fsec\n" % (time()-t))
+    svmLinClassifier = svm.SVC(kernel='linear', C=1)
+    metrics['Linear SVM'] = cross_validate(svmLinClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False, n_jobs=-1)
+    print("Training Linear SVM finished in %0.3fsec\n" % (time()-t))
 
 #Keerthi - SGD classifier start
-    sgd_params = {'alpha': 2.4583743122823383e-05, 'l1_ratio': 0.7561414418634068}
-    sgdClassifier = SGDClassifier(max_iter=1000,penalty='elasticnet',loss='hinge',**sgd_params)
-
     print("Training SGD")
     t = time()
+    sgd_params = {'alpha': 2.4583743122823383e-05, 'l1_ratio': 0.7561414418634068}
+    sgdClassifier = SGDClassifier(max_iter=1000,penalty='elasticnet',loss='hinge',**sgd_params)
     metrics['SGD'] = cross_validate(sgdClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False,n_jobs=3)
     print("Training SGD finished in %0.3fsec\n" % (time()-t))
 #Keerthi - SGD classifier end
@@ -149,7 +143,7 @@ def main(train_file, sample_size=1, folds=5):
 
     metrics = train_crossval(x_all, y_all, folds)
 
-    print(metrics)
+    pprint(metrics)
 
 if __name__ == '__main__':
     t = time()

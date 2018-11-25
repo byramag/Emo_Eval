@@ -1,0 +1,4310 @@
+[ //retrieved from https://unicode.org/emoji/charts/full-emoji-list.html#1f949
+	{
+        "unicode": "u+1f600",
+        "emoji": 😀,
+        "description" : "grinning face"
+    },
+    {
+		"unicode" : "u+1f603",
+		"emoji" : 😃,
+		"description" : "grinning face with big eyes"
+    },
+    {
+		"unicode" : "u+1f604",
+		"emoji" : 😄,
+		"description" : "grinning face with smiling eyes"
+	},
+    {
+		"unicode" : "u+1f601",
+		"emoji" : 😁,
+		"description" : "beaming face with smiling eyes"
+	},
+	{
+		"unicode" : "u+1f606",
+		"emoji" : 😆,
+		"description" : "grinning squinting face"
+	},
+	{
+		"unicode" : "u+1f605",
+		"emoji" : 😅,
+		"description" : "grinning face with sweat"
+	},
+	{
+		"unicode" : "u+1f923",
+		"emoji" : 🤣,
+		"description" : "rolling on the floor laughing"
+	},
+	{
+		"unicode" : "u+1f602",
+		"emoji" : 😂,
+		"description" : "face with tears of joy"
+	},
+	{
+		"unicode" : "u+1f642",
+		"emoji" : 🙂,
+		"description" : "slightly smiling face"
+	},
+	{
+		"unicode" : "u+1f643",
+		"emoji" : 🙃,
+		"description" : "upside-down face"
+	},
+	{
+		"unicode" : "u+1f609",
+		"emoji" : 😉,
+		"description" : "winking face"
+	},
+	{
+		"unicode" : "u+1f60a",
+		"emoji" : 😊,
+		"description" : "smiling face with smiling eyes"
+	},
+	{
+		"unicode" : "u+1f607",
+		"emoji" : 😇,
+		"description" : "smiling face with halo"
+	},
+	{
+		"unicode" : "u+1f970",
+		"emoji" : 🥰,
+		"description" : "smiling face with 3 hearts"
+	},
+	{
+		"unicode" : "u+1f60d",
+		"emoji" : 😍,
+		"description" : "smiling face with heart-eyes"
+	},
+	{
+		"unicode" : "u+1f929",
+		"emoji" : 🤩,
+		"description" : "star-struck"
+	},
+	{
+		"unicode" : "u+1f618",
+		"emoji" : 😘,
+		"description" : "face blowing a kiss"
+	},
+	{
+		"unicode" : "u+1f617",
+		"emoji" : 😗,
+		"description" : "kissing face"
+	},
+	{
+		"unicode" : "u+263a",
+		"emoji" : ☺,
+		"description" : "smiling face"
+	},
+	{
+		"unicode" : "u+1f61a",
+		"emoji" : 😚,
+		"description" : "kissing face with closed eyes"
+	},
+	{
+		"unicode" : "u+1f619",
+		"emoji" : 😙,
+		"description" : "kissing face with smiling eyes"
+	},
+	{
+		"unicode" : "u+1f60b",
+		"emoji" : 😋,
+		"description" : "face savoring food"
+	},
+	{
+		"unicode" : "u+1f61b",
+		"emoji" : 😛,
+		"description" : "face with tongue"
+	},
+	{
+		"unicode" : "u+1f61c",
+		"emoji" : 😜,
+		"description" : "winking face with tongue"
+	},
+	{
+		"unicode" : "u+1f92a",
+		"emoji" : 🤪,
+		"description" : "zany face"
+	},
+	{
+		"unicode" : "u+1f61d",
+		"emoji" : 😝,
+		"description" : "squinting face with tongue"
+	},
+	{
+		"unicode" : "u+1f911",
+		"emoji" : 🤑,
+		"description" : "money-mouth face"
+	},
+	{
+		"unicode" : "u+1f917",
+		"emoji" : 🤗,
+		"description" : "hugging face"
+	},
+	{
+		"unicode" : "u+1f92d",
+		"emoji" : 🤭,
+		"description" : "face with hand over mouth"
+	},
+	{
+		"unicode" : "u+1f92b",
+		"emoji" : 🤫,
+		"description" : "shushing face"
+	},
+	{
+		"unicode" : "u+1f914",
+		"emoji" : 🤔,
+		"description" : "thinking face"
+	},
+	{
+		"unicode" : "u+1f910",
+		"emoji" : 🤐,
+		"description" : "zipper-mouth face"
+	},
+	{
+		"unicode" : "u+1f928",
+		"emoji" : 🤨,
+		"description" : "face with raised eyebrow"
+	},
+	{
+		"unicode" : "u+1f610",
+		"emoji" : 😐,
+		"description" : "neutral face"
+	},
+	{
+		"unicode" : "u+1f611",
+		"emoji" : 😑,
+		"description" : "expressionless face"
+	},
+	{
+		"unicode" : "u+1f636",
+		"emoji" : 😶,
+		"description" : "face without mouth"
+	},
+	{
+		"unicode" : "u+1f60f",
+		"emoji" : 😏,
+		"description" : "smirking face"
+	},
+	{
+		"unicode" : "u+1f612",
+		"emoji" : 😒,
+		"description" : "unamused face"
+	},
+	{
+		"unicode" : "u+1f644",
+		"emoji" : 🙄,
+		"description" : "face with rolling eyes"
+	},
+	{
+		"unicode" : "u+1f62c",
+		"emoji" : 😬,
+		"description" : "grimacing face"
+	},
+	{
+		"unicode" : "u+1f925",
+		"emoji" : 🤥,
+		"description" : "lying face"
+	},
+	{
+		"unicode" : "u+1f60c",
+		"emoji" : 😌,
+		"description" : "relieved face"
+	},
+	{
+		"unicode" : "u+1f614",
+		"emoji" : 😔,
+		"description" : "pensive face"
+	},
+	{
+		"unicode" : "u+1f62a",
+		"emoji" : 😪,
+		"description" : "sleepy face"
+	},
+	{
+		"unicode" : "u+1f924",
+		"emoji" : 🤤,
+		"description" : "drooling face"
+	},
+	{
+		"unicode" : "u+1f634",
+		"emoji" : 😴,
+		"description" : "sleeping face"
+	},
+	{
+		"unicode" : "u+1f637",
+		"emoji" : 😷,
+		"description" : "face with medical mask"
+	},
+	{
+		"unicode" : "u+1f912",
+		"emoji" : 🤒,
+		"description" : "face with thermometer"
+	},
+	{
+		"unicode" : "u+1f915",
+		"emoji" : 🤕,
+		"description" : "face with head-bandage"
+	},
+	{
+		"unicode" : "u+1f922",
+		"emoji" : 🤢,
+		"description" : "nauseated face"
+	},
+	{
+		"unicode" : "u+1f92e",
+		"emoji" : 🤮,
+		"description" : "face vomiting"
+	},
+	{
+		"unicode" : "u+1f927",
+		"emoji" : 🤧,
+		"description" : "sneezing face"
+	},
+	{
+		"unicode" : "u+1f975",
+		"emoji" : 🥵,
+		"description" : "hot face"
+	},
+	{
+		"unicode" : "u+1f976",
+		"emoji" : 🥶,
+		"description" : "cold face"
+	},
+	{
+		"unicode" : "u+1f974",
+		"emoji" : 🥴,
+		"description" : "woozy face"
+	},
+	{
+		"unicode" : "u+1f635",
+		"emoji" : 😵,
+		"description" : "dizzy face"
+	},
+	{
+		"unicode" : "u+1f92f",
+		"emoji" : 🤯,
+		"description" : "exploding head"
+	},
+	{
+		"unicode" : "u+1f920",
+		"emoji" : 🤠,
+		"description" : "cowboy hat face"
+	},
+	{
+		"unicode" : "u+1f973",
+		"emoji" : 🥳,
+		"description" : "partying face"
+	},
+	{
+		"unicode" : "u+1f60e",
+		"emoji" : 😎,
+		"description" : "smiling face with sunglasses"
+	},
+	{
+		"unicode" : "u+1f913",
+		"emoji" : 🤓,
+		"description" : "nerd face"
+	},
+	{
+		"unicode" : "u+1f9d0",
+		"emoji" : 🧐,
+		"description" : "face with monocle"
+	},
+	{
+		"unicode" : "u+1f615",
+		"emoji" : 😕,
+		"description" : "confused face"
+	},
+	{
+		"unicode" : "u+1f61f",
+		"emoji" : 😟,
+		"description" : "worried face"
+	},
+	{
+		"unicode" : "u+1f641",
+		"emoji" : 🙁,
+		"description" : "slightly frowning face"
+	},
+	{
+		"unicode" : "u+2639",
+		"emoji" : ☹,
+		"description" : "frowning face"
+	},
+	{
+		"unicode" : "u+1f62e",
+		"emoji" : 😮,
+		"description" : "face with open mouth"
+	},
+	{
+		"unicode" : "u+1f62f",
+		"emoji" : 😯,
+		"description" : "hushed face"
+	},
+	{
+		"unicode" : "u+1f632",
+		"emoji" : 😲,
+		"description" : "astonished face"
+	},
+	{
+		"unicode" : "u+1f633",
+		"emoji" : 😳,
+		"description" : "flushed face"
+	},
+	{
+		"unicode" : "u+1f97a",
+		"emoji" : 🥺,
+		"description" : "pleading face"
+	},
+	{
+		"unicode" : "u+1f626",
+		"emoji" : 😦,
+		"description" : "frowning face with open mouth"
+	},
+	{
+		"unicode" : "u+1f627",
+		"emoji" : 😧,
+		"description" : "anguished face"
+	},
+	{
+		"unicode" : "u+1f628",
+		"emoji" : 😨,
+		"description" : "fearful face"
+	},
+	{
+		"unicode" : "u+1f630",
+		"emoji" : 😰,
+		"description" : "anxious face with sweat"
+	},
+	{
+		"unicode" : "u+1f625",
+		"emoji" : 😥,
+		"description" : "sad but relieved face"
+	},
+	{
+		"unicode" : "u+1f622",
+		"emoji" : 😢,
+		"description" : "crying face"
+	},
+	{
+		"unicode" : "u+1f62d",
+		"emoji" : 😭,
+		"description" : "loudly crying face"
+	},
+	{
+		"unicode" : "u+1f631",
+		"emoji" : 😱,
+		"description" : "face screaming in fear"
+	},
+	{
+		"unicode" : "u+1f616",
+		"emoji" : 😖,
+		"description" : "confounded face"
+	},
+	{
+		"unicode" : "u+1f623",
+		"emoji" : 😣,
+		"description" : "persevering face"
+	},
+	{
+		"unicode" : "u+1f61e",
+		"emoji" : 😞,
+		"description" : "disappointed face"
+	},
+	{
+		"unicode" : "u+1f613",
+		"emoji" : 😓,
+		"description" : "downcast face with sweat"
+	},
+	{
+		"unicode" : "u+1f629",
+		"emoji" : 😩,
+		"description" : "weary face"
+	},
+	{
+		"unicode" : "u+1f62b",
+		"emoji" : 😫,
+		"description" : "tired face"
+	},
+	{
+		"unicode" : "u+1f624",
+		"emoji" : 😤,
+		"description" : "face with steam from nose"
+	},
+	{
+		"unicode" : "u+1f621",
+		"emoji" : 😡,
+		"description" : "pouting face"
+	},
+	{
+		"unicode" : "u+1f620",
+		"emoji" : 😠,
+		"description" : "angry face"
+	},
+	{
+		"unicode" : "u+1f92c",
+		"emoji" : 🤬,
+		"description" : "face with symbols on mouth"
+	},
+	{
+		"unicode" : "u+1f608",
+		"emoji" : 😈,
+		"description" : "smiling face with horns"
+	},
+	{
+		"unicode" : "u+1f47f",
+		"emoji" : 👿,
+		"description" : "angry face with horns"
+	},
+	{
+		"unicode" : "u+1f480",
+		"emoji" : 💀,
+		"description" : "skull"
+	},
+	{
+		"unicode" : "u+2620",
+		"emoji" : ☠,
+		"description" : "skull and crossbones"
+	},
+	{
+		"unicode" : "u+1f4a9",
+		"emoji" : 💩,
+		"description" : "pile of poo"
+	},
+	{
+		"unicode" : "u+1f921",
+		"emoji" : 🤡,
+		"description" : "clown face"
+	},
+	{
+		"unicode" : "u+1f479",
+		"emoji" : 👹,
+		"description" : "ogre"
+	},
+	{
+		"unicode" : "u+1f47a",
+		"emoji" : 👺,
+		"description" : "goblin"
+	},
+	{
+		"unicode" : "u+1f47b",
+		"emoji" : 👻,
+		"description" : "ghost"
+	},
+	{
+		"unicode" : "u+1f47d",
+		"emoji" : 👽,
+		"description" : "alien"
+	},
+	{
+		"unicode" : "u+1f47e",
+		"emoji" : 👾,
+		"description" : "alien monster"
+	},
+	{
+		"unicode" : "u+1f916",
+		"emoji" : 🤖,
+		"description" : "robot face"
+	},
+	{
+		"unicode" : "u+1f63a",
+		"emoji" : 😺,
+		"description" : "grinning cat face"
+	},
+	{
+		"unicode" : "u+1f638",
+		"emoji" : 😸,
+		"description" : "grinning cat face with smiling eyes"
+	},
+	{
+		"unicode" : "u+1f639",
+		"emoji" : 😹,
+		"description" : "cat face with tears of joy"
+	},
+	{
+		"unicode" : "u+1f63b",
+		"emoji" : 😻,
+		"description" : "smiling cat face with heart-eyes"
+	},
+	{
+		"unicode" : "u+1f63c",
+		"emoji" : 😼,
+		"description" : "cat face with wry smile"
+	},
+	{
+		"unicode" : "u+1f63d",
+		"emoji" : 😽,
+		"description" : "kissing cat face"
+	},
+	{
+		"unicode" : "u+1f640",
+		"emoji" : 🙀,
+		"description" : "weary cat face"
+	},
+	{
+		"unicode" : "u+1f63f",
+		"emoji" : 😿,
+		"description" : "crying cat face"
+	},
+	{
+		"unicode" : "u+1f63e",
+		"emoji" : 😾,
+		"description" : "pouting cat face"
+	},
+	{
+		"unicode" : "u+1f648",
+		"emoji" : 🙈,
+		"description" : "see-no-evil monkey"
+	},
+	{
+		"unicode" : "u+1f649",
+		"emoji" : 🙉,
+		"description" : "hear-no-evil monkey"
+	},
+	{
+		"unicode" : "u+1f64a",
+		"emoji" : 🙊,
+		"description" : "speak-no-evil monkey"
+	},
+	{
+		"unicode" : "u+1f48b",
+		"emoji" : 💋,
+		"description" : "kiss mark"
+	},
+	{
+		"unicode" : "u+1f48c",
+		"emoji" : 💌,
+		"description" : "love letter"
+	},
+	{
+		"unicode" : "u+1f498",
+		"emoji" : 💘,
+		"description" : "heart with arrow"
+	},
+	{
+		"unicode" : "u+1f49d",
+		"emoji" : 💝,
+		"description" : "heart with ribbon"
+	},
+	{
+		"unicode" : "u+1f496",
+		"emoji" : 💖,
+		"description" : "sparkling heart"
+	},
+	{
+		"unicode" : "u+1f497",
+		"emoji" : 💗,
+		"description" : "growing heart"
+	},
+	{
+		"unicode" : "u+1f493",
+		"emoji" : 💓,
+		"description" : "beating heart"
+	},
+	{
+		"unicode" : "u+1f49e",
+		"emoji" : 💞,
+		"description" : "revolving hearts"
+	},
+	{
+		"unicode" : "u+1f495",
+		"emoji" : 💕,
+		"description" : "two hearts"
+	},
+	{
+		"unicode" : "u+1f49f",
+		"emoji" : 💟,
+		"description" : "heart decoration"
+	},
+	{
+		"unicode" : "u+2763",
+		"emoji" : ❣,
+		"description" : "heavy heart exclamation"
+	},
+	{
+		"unicode" : "u+1f494",
+		"emoji" : 💔,
+		"description" : "broken heart"
+	},
+	{
+		"unicode" : "u+2764",
+		"emoji" : ❤,
+		"description" : "red heart"
+	},
+	{
+		"unicode" : "u+1f9e1",
+		"emoji" : 🧡,
+		"description" : "orange heart"
+	},
+	{
+		"unicode" : "u+1f49b",
+		"emoji" : 💛,
+		"description" : "yellow heart"
+	},
+	{
+		"unicode" : "u+1f49a",
+		"emoji" : 💚,
+		"description" : "green heart"
+	},
+	{
+		"unicode" : "u+1f499",
+		"emoji" : 💙,
+		"description" : "blue heart"
+	},
+	{
+		"unicode" : "u+1f49c",
+		"emoji" : 💜,
+		"description" : "purple heart"
+	},
+	{
+		"unicode" : "u+1f5a4",
+		"emoji" : 🖤,
+		"description" : "black heart"
+	},
+	{
+		"unicode" : "u+1f4af",
+		"emoji" : 💯,
+		"description" : "hundred points"
+	},
+	{
+		"unicode" : "u+1f4a2",
+		"emoji" : 💢,
+		"description" : "anger symbol"
+	},
+	{
+		"unicode" : "u+1f4a5",
+		"emoji" : 💥,
+		"description" : "collision"
+	},
+	{
+		"unicode" : "u+1f4ab",
+		"emoji" : 💫,
+		"description" : "dizzy"
+	},
+	{
+		"unicode" : "u+1f4a6",
+		"emoji" : 💦,
+		"description" : "sweat droplets"
+	},
+	{
+		"unicode" : "u+1f4a8",
+		"emoji" : 💨,
+		"description" : "dashing away"
+	},
+	{
+		"unicode" : "u+1f573",
+		"emoji" : 🕳,
+		"description" : "hole"
+	},
+	{
+		"unicode" : "u+1f4a3",
+		"emoji" : 💣,
+		"description" : "bomb"
+	},
+	{
+		"unicode" : "u+1f4ac",
+		"emoji" : 💬,
+		"description" : "speech balloon"
+	},
+	"u+1f441 u+fe0f u+200d u+1f5e8 u+fe0f"👁️‍🗨️ "eye in speech bubble",
+	{
+		"unicode" : "u+1f5e8",
+		"emoji" : 🗨,
+		"description" : "left speech bubble"
+	},
+	{
+		"unicode" : "u+1f5ef",
+		"emoji" : 🗯,
+		"description" : "right anger bubble"
+	},
+	{
+		"unicode" : "u+1f4ad",
+		"emoji" : 💭,
+		"description" : "thought balloon"
+	},
+	{
+		"unicode" : "u+1f4a4",
+		"emoji" : 💤,
+		"description" : "zzz"
+	},
+	{
+		"unicode" : "u+1f44b",
+		"emoji" : 👋,
+		"description" : "waving hand"
+	},
+	{
+		"unicode" : "u+1f91a",
+		"emoji" : 🤚,
+		"description" : "raised back of hand"
+	},
+	{
+		"unicode" : "u+1f590",
+		"emoji" : 🖐,
+		"description" : "hand with fingers splayed"
+	},
+	{
+		"unicode" : "u+270b",
+		"emoji" : ✋,
+		"description" : "raised hand"
+	},
+	{
+		"unicode" : "u+1f596",
+		"emoji" : 🖖,
+		"description" : "vulcan salute"
+	},
+	{
+		"unicode" : "u+1f44c",
+		"emoji" : 👌,
+		"description" : "ok hand"
+	},
+	{
+		"unicode" : "u+270c",
+		"emoji" : ✌,
+		"description" : "victory hand"
+	},
+	{
+		"unicode" : "u+1f91e",
+		"emoji" : 🤞,
+		"description" : "crossed fingers"
+	},
+	{
+		"unicode" : "u+1f91f",
+		"emoji" : 🤟,
+		"description" : "love-you gesture"
+	},
+	{
+		"unicode" : "u+1f918",
+		"emoji" : 🤘,
+		"description" : "sign of the horns"
+	},
+	{
+		"unicode" : "u+1f919",
+		"emoji" : 🤙,
+		"description" : "call me hand"
+	},
+	{
+		"unicode" : "u+1f448",
+		"emoji" : 👈,
+		"description" : "backhand index pointing left"
+	},
+	{
+		"unicode" : "u+1f449",
+		"emoji" : 👉,
+		"description" : "backhand index pointing right"
+	},
+	{
+		"unicode" : "u+1f446",
+		"emoji" : 👆,
+		"description" : "backhand index pointing up"
+	},
+	{
+		"unicode" : "u+1f595",
+		"emoji" : 🖕,
+		"description" : "middle finger"
+	},
+	{
+		"unicode" : "u+1f447",
+		"emoji" : 👇,
+		"description" : "backhand index pointing down"
+	},
+	{
+		"unicode" : "u+261d",
+		"emoji" : ☝,
+		"description" : "index pointing up"
+	},
+	{
+		"unicode" : "u+1f44d",
+		"emoji" : 👍,
+		"description" : "thumbs up"
+	},
+	{
+		"unicode" : "u+1f44e",
+		"emoji" : 👎,
+		"description" : "thumbs down"
+	},
+	{
+		"unicode" : "u+270a",
+		"emoji" : ✊,
+		"description" : "raised fist"
+	},
+	{
+		"unicode" : "u+1f44a",
+		"emoji" : 👊,
+		"description" : "oncoming fist"
+	},
+	{
+		"unicode" : "u+1f91b",
+		"emoji" : 🤛,
+		"description" : "left-facing fist"
+	},
+	{
+		"unicode" : "u+1f91c",
+		"emoji" : 🤜,
+		"description" : "right-facing fist"
+	},
+	{
+		"unicode" : "u+1f44f",
+		"emoji" : 👏,
+		"description" : "clapping hands"
+	},
+	{
+		"unicode" : "u+1f64c",
+		"emoji" : 🙌,
+		"description" : "raising hands"
+	},
+	{
+		"unicode" : "u+1f450",
+		"emoji" : 👐,
+		"description" : "open hands"
+	},
+	{
+		"unicode" : "u+1f932",
+		"emoji" : 🤲,
+		"description" : "palms up together"
+	},
+	{
+		"unicode" : "u+1f91d",
+		"emoji" : 🤝,
+		"description" : "handshake"
+	},
+	{
+		"unicode" : "u+1f64f",
+		"emoji" : 🙏,
+		"description" : "folded hands"
+	},
+	{
+		"unicode" : "u+270d",
+		"emoji" : ✍,
+		"description" : "writing hand"
+	},
+	{
+		"unicode" : "u+1f485",
+		"emoji" : 💅,
+		"description" : "nail polish"
+	},
+	{
+		"unicode" : "u+1f933",
+		"emoji" : 🤳,
+		"description" : "selfie"
+	},
+	{
+		"unicode" : "u+1f4aa",
+		"emoji" : 💪,
+		"description" : "flexed biceps"
+	},
+	{
+		"unicode" : "u+1f9b5",
+		"emoji" : 🦵,
+		"description" : "leg"
+	},
+	{
+		"unicode" : "u+1f9b6",
+		"emoji" : 🦶,
+		"description" : "foot"
+	},
+	{
+		"unicode" : "u+1f442",
+		"emoji" : 👂,
+		"description" : "ear"
+	},
+	{
+		"unicode" : "u+1f443",
+		"emoji" : 👃,
+		"description" : "nose"
+	},
+	{
+		"unicode" : "u+1f9e0",
+		"emoji" : 🧠,
+		"description" : "brain"
+	},
+	{
+		"unicode" : "u+1f9b7",
+		"emoji" : 🦷,
+		"description" : "tooth"
+	},
+	{
+		"unicode" : "u+1f9b4",
+		"emoji" : 🦴,
+		"description" : "bone"
+	},
+	{
+		"unicode" : "u+1f440",
+		"emoji" : 👀,
+		"description" : "eyes"
+	},
+	{
+		"unicode" : "u+1f441",
+		"emoji" : 👁,
+		"description" : "eye"
+	},
+	{
+		"unicode" : "u+1f445",
+		"emoji" : 👅,
+		"description" : "tongue"
+	},
+	{
+		"unicode" : "u+1f444",
+		"emoji" : 👄,
+		"description" : "mouth"
+	},
+	{
+		"unicode" : "u+1f476",
+		"emoji" : 👶,
+		"description" : "baby"
+	},
+	{
+		"unicode" : "u+1f9d2",
+		"emoji" : 🧒,
+		"description" : "child"
+	},
+	{
+		"unicode" : "u+1f466",
+		"emoji" : 👦,
+		"description" : "boy"
+	},
+	{
+		"unicode" : "u+1f467",
+		"emoji" : 👧,
+		"description" : "girl"
+	},
+	{
+		"unicode" : "u+1f9d1",
+		"emoji" : 🧑,
+		"description" : "person"
+	},
+	"u+1f471"	👱	"person": "blond hair",
+	{
+		"unicode" : "u+1f468",
+		"emoji" : 👨,
+		"description" : "man"
+	},
+	"u+1f471 u+200d u+2642 u+fe0f"	👱‍♂️	"man": "blond hair",
+	"u+1f468 u+200d u+1f9b0"	👨‍🦰	"man": "red hair",
+	"u+1f468 u+200d u+1f9b1"	👨‍🦱	"man": "curly hair",
+	"u+1f468 u+200d u+1f9b3"	👨‍🦳	"man": "white hair",
+	"u+1f468 u+200d u+1f9b2"	👨‍🦲	"man": "bald",
+	"u+1f9d4"	🧔	"man": "beard",
+	{
+		"unicode" : "u+1f469",
+		"emoji" : 👩,
+		"description" : "woman"
+	},
+	"u+1f471 u+200d u+2640 u+fe0f"	👱‍♀️	"woman": "blond hair",
+	"u+1f469 u+200d u+1f9b0"	👩‍🦰	"woman": "red hair",
+	"u+1f469 u+200d u+1f9b1"	👩‍🦱	"woman": "curly hair",
+	"u+1f469 u+200d u+1f9b3"	👩‍🦳	"woman": "white hair",
+	"u+1f469 u+200d u+1f9b2"	👩‍🦲	"woman": "bald",
+	{
+		"unicode" : "u+1f9d3",
+		"emoji" : 🧓,
+		"description" : "older person"
+	},
+	{
+		"unicode" : "u+1f474",
+		"emoji" : 👴,
+		"description" : "old man"
+	},
+	{
+		"unicode" : "u+1f475",
+		"emoji" : 👵,
+		"description" : "old woman"
+	},
+	{
+		"unicode" : "u+1f64d",
+		"emoji" : 🙍,
+		"description" : "person frowning"
+	},
+	{
+		"unicode" : "u+1f64d u+200d u+2642 u+fe0f",
+		"emoji" : 🙍‍♂️,
+		"description" : "man frowning"
+	},
+	{
+		"unicode" : "u+1f64d u+200d u+2640 u+fe0f",
+		"emoji" : 🙍‍♀️,
+		"description" : "woman frowning"
+	},
+	{
+		"unicode" : "u+1f64e",
+		"emoji" : 🙎,
+		"description" : "person pouting"
+	},
+	{
+		"unicode" : "u+1f64e u+200d u+2642 u+fe0f",
+		"emoji" : 🙎‍♂️,
+		"description" : "man pouting"
+	},
+	{
+		"unicode" : "u+1f64e u+200d u+2640 u+fe0f",
+		"emoji" : 🙎‍♀️,
+		"description" : "woman pouting"
+	},
+	{
+		"unicode" : "u+1f645",
+		"emoji" : 🙅,
+		"description" : "person gesturing no"
+	},
+	{
+		"unicode" : "u+1f645 u+200d u+2642 u+fe0f",
+		"emoji" : 🙅‍♂️,
+		"description" : "man gesturing no"
+	},
+	{
+		"unicode" : "u+1f645 u+200d u+2640 u+fe0f",
+		"emoji" : 🙅‍♀️,
+		"description" : "woman gesturing no"
+	},
+	{
+		"unicode" : "u+1f646",
+		"emoji" : 🙆,
+		"description" : "person gesturing ok"
+	},
+	{
+		"unicode" : "u+1f646 u+200d u+2642 u+fe0f",
+		"emoji" : 🙆‍♂️,
+		"description" : "man gesturing ok"
+	},
+	{
+		"unicode" : "u+1f646 u+200d u+2640 u+fe0f",
+		"emoji" : 🙆‍♀️,
+		"description" : "woman gesturing ok"
+	},
+	{
+		"unicode" : "u+1f481",
+		"emoji" : 💁,
+		"description" : "person tipping hand"
+	},
+	{
+		"unicode" : "u+1f481 u+200d u+2642 u+fe0f",
+		"emoji" : 💁‍♂️,
+		"description" : "man tipping hand"
+	},
+	{
+		"unicode" : "u+1f481 u+200d u+2640 u+fe0f",
+		"emoji" : 💁‍♀️,
+		"description" : "woman tipping hand"
+	},
+	{
+		"unicode" : "u+1f64b",
+		"emoji" : 🙋,
+		"description" : "person raising hand"
+	},
+	{
+		"unicode" : "u+1f64b u+200d u+2642 u+fe0f",
+		"emoji" : 🙋‍♂️,
+		"description" : "man raising hand"
+	},
+	{
+		"unicode" : "u+1f64b u+200d u+2640 u+fe0f",
+		"emoji" : 🙋‍♀️,
+		"description" : "woman raising hand"
+	},
+	{
+		"unicode" : "u+1f647",
+		"emoji" : 🙇,
+		"description" : "person bowing"
+	},
+	{
+		"unicode" : "u+1f647 u+200d u+2642 u+fe0f",
+		"emoji" : 🙇‍♂️,
+		"description" : "man bowing"
+	},
+	{
+		"unicode" : "u+1f647 u+200d u+2640 u+fe0f",
+		"emoji" : 🙇‍♀️,
+		"description" : "woman bowing"
+	},
+	{
+		"unicode" : "u+1f926",
+		"emoji" : 🤦,
+		"description" : "person facepalming"
+	},
+	{
+		"unicode" : "u+1f926 u+200d u+2642 u+fe0f",
+		"emoji" : 🤦‍♂️,
+		"description" : "man facepalming"
+	},
+	{
+		"unicode" : "u+1f926 u+200d u+2640 u+fe0f",
+		"emoji" : 🤦‍♀️,
+		"description" : "woman facepalming"
+	},
+	{
+		"unicode" : "u+1f937",
+		"emoji" : 🤷,
+		"description" : "person shrugging"
+	},
+	{
+		"unicode" : "u+1f937 u+200d u+2642 u+fe0f",
+		"emoji" : 🤷‍♂️,
+		"description" : "man shrugging"
+	},
+	{
+		"unicode" : "u+1f937 u+200d u+2640 u+fe0f",
+		"emoji" : 🤷‍♀️,
+		"description" : "woman shrugging"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+2695 u+fe0f",
+		"emoji" : 👨‍⚕️,
+		"description" : "man health worker"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+2695 u+fe0f",
+		"emoji" : 👩‍⚕️,
+		"description" : "woman health worker"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f393",
+		"emoji" : 👨‍🎓,
+		"description" : "man student"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f393",
+		"emoji" : 👩‍🎓,
+		"description" : "woman student"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f3eb",
+		"emoji" : 👨‍🏫,
+		"description" : "man teacher"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f3eb",
+		"emoji" : 👩‍🏫,
+		"description" : "woman teacher"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+2696 u+fe0f",
+		"emoji" : 👨‍⚖️,
+		"description" : "man judge"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+2696 u+fe0f",
+		"emoji" : 👩‍⚖️,
+		"description" : "woman judge"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f33e",
+		"emoji" : 👨‍🌾,
+		"description" : "man farmer"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f33e",
+		"emoji" : 👩‍🌾,
+		"description" : "woman farmer"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f373",
+		"emoji" : 👨‍🍳,
+		"description" : "man cook"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f373",
+		"emoji" : 👩‍🍳,
+		"description" : "woman cook"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f527",
+		"emoji" : 👨‍🔧,
+		"description" : "man mechanic"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f527",
+		"emoji" : 👩‍🔧,
+		"description" : "woman mechanic"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f3ed",
+		"emoji" : 👨‍🏭,
+		"description" : "man factory worker"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f3ed",
+		"emoji" : 👩‍🏭,
+		"description" : "woman factory worker"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f4bc",
+		"emoji" : 👨‍💼,
+		"description" : "man office worker"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f4bc",
+		"emoji" : 👩‍💼,
+		"description" : "woman office worker"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f52c",
+		"emoji" : 👨‍🔬,
+		"description" : "man scientist"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f52c",
+		"emoji" : 👩‍🔬,
+		"description" : "woman scientist"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f4bb",
+		"emoji" : 👨‍💻,
+		"description" : "man technologist"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f4bb",
+		"emoji" : 👩‍💻,
+		"description" : "woman technologist"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f3a4",
+		"emoji" : 👨‍🎤,
+		"description" : "man singer"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f3a4",
+		"emoji" : 👩‍🎤,
+		"description" : "woman singer"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f3a8",
+		"emoji" : 👨‍🎨,
+		"description" : "man artist"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f3a8",
+		"emoji" : 👩‍🎨,
+		"description" : "woman artist"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+2708 u+fe0f",
+		"emoji" : 👨‍✈️,
+		"description" : "man pilot"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+2708 u+fe0f",
+		"emoji" : 👩‍✈️,
+		"description" : "woman pilot"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f680",
+		"emoji" : 👨‍🚀,
+		"description" : "man astronaut"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f680",
+		"emoji" : 👩‍🚀,
+		"description" : "woman astronaut"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+1f692",
+		"emoji" : 👨‍🚒,
+		"description" : "man firefighter"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+1f692",
+		"emoji" : 👩‍🚒,
+		"description" : "woman firefighter"
+	},
+	{
+		"unicode" : "u+1f46e",
+		"emoji" : 👮,
+		"description" : "police officer"
+	},
+	{
+		"unicode" : "u+1f46e u+200d u+2642 u+fe0f",
+		"emoji" : 👮‍♂️,
+		"description" : "man police officer"
+	},
+	{
+		"unicode" : "u+1f46e u+200d u+2640 u+fe0f",
+		"emoji" : 👮‍♀️,
+		"description" : "woman police officer"
+	},
+	{
+		"unicode" : "u+1f575",
+		"emoji" : 🕵,
+		"description" : "detective"
+	},
+	{
+		"unicode" : "u+1f575 u+fe0f u+200d u+2642 u+fe0f",
+		"emoji" : 🕵️‍♂️,
+		"description" : "man detective"
+	},
+	{
+		"unicode" : "u+1f575 u+fe0f u+200d u+2640 u+fe0f",
+		"emoji" : 🕵️‍♀️,
+		"description" : "woman detective"
+	},
+	{
+		"unicode" : "u+1f482",
+		"emoji" : 💂,
+		"description" : "guard"
+	},
+	"u+1f482 u+200d u+2642 u+fe0f    "💂‍♂️	"man guard",
+	{
+		"unicode" : "u+1f482 u+200d u+2640 u+fe0f",
+		"emoji" : 💂‍♀️,
+		"description" : "woman guard"
+	},
+	{
+		"unicode" : "u+1f477",
+		"emoji" : 👷,
+		"description" : "construction worker"
+	},
+	{
+		"unicode" : "u+1f477 u+200d u+2642 u+fe0f",
+		"emoji" : 👷‍♂️,
+		"description" : "man construction worker"
+	},
+	{
+		"unicode" : "u+1f477 u+200d u+2640 u+fe0f",
+		"emoji" : 👷‍♀️,
+		"description" : "woman construction worker"
+	},
+	{
+		"unicode" : "u+1f934",
+		"emoji" : 🤴,
+		"description" : "prince"
+	},
+	{
+		"unicode" : "u+1f478",
+		"emoji" : 👸,
+		"description" : "princess"
+	},
+	{
+		"unicode" : "u+1f473",
+		"emoji" : 👳,
+		"description" : "person wearing turban"
+	},
+	{
+		"unicode" : "u+1f473 u+200d u+2642 u+fe0f",
+		"emoji" : 👳‍♂️,
+		"description" : "man wearing turban"
+	},
+	{
+		"unicode" : "u+1f473 u+200d u+2640 u+fe0f",
+		"emoji" : 👳‍♀️,
+		"description" : "woman wearing turban"
+	},
+	{
+		"unicode" : "u+1f472",
+		"emoji" : 👲,
+		"description" : "man with chinese cap"
+	},
+	{
+		"unicode" : "u+1f9d5",
+		"emoji" : 🧕,
+		"description" : "woman with headscarf"
+	},
+	{
+		"unicode" : "u+1f935",
+		"emoji" : 🤵,
+		"description" : "man in tuxedo"
+	},
+	{
+		"unicode" : "u+1f470",
+		"emoji" : 👰,
+		"description" : "bride with veil"
+	},
+	{
+		"unicode" : "u+1f930",
+		"emoji" : 🤰,
+		"description" : "pregnant woman"
+	},
+	{
+		"unicode" : "u+1f931",
+		"emoji" : 🤱,
+		"description" : "breast-feeding"
+	},
+	{
+		"unicode" : "u+1f47c",
+		"emoji" : 👼,
+		"description" : "baby angel"
+	},
+	{
+		"unicode" : "u+1f385",
+		"emoji" : 🎅,
+		"description" : "santa claus"
+	},
+	"u+1f936"	🤶	"mrs". "claus",
+	{
+		"unicode" : "u+1f9b8",
+		"emoji" : 🦸,
+		"description" : "superhero"
+	},
+	{
+		"unicode" : "u+1f9b8 u+200d u+2642 u+fe0f",
+		"emoji" : 🦸‍♂️,
+		"description" : "man superhero"
+	},
+	{
+		"unicode" : "u+1f9b8 u+200d u+2640 u+fe0f",
+		"emoji" : 🦸‍♀️,
+		"description" : "woman superhero"
+	},
+	{
+		"unicode" : "u+1f9b9",
+		"emoji" : 🦹,
+		"description" : "supervillain"
+	},
+	{
+		"unicode" : "u+1f9b9 u+200d u+2642 u+fe0f",
+		"emoji" : 🦹‍♂️,
+		"description" : "man supervillain"
+	},
+	{
+		"unicode" : "u+1f9b9 u+200d u+2640 u+fe0f",
+		"emoji" : 🦹‍♀️,
+		"description" : "woman supervillain"
+	},
+	{
+		"unicode" : "u+1f9d9",
+		"emoji" : 🧙,
+		"description" : "mage"
+	},
+	{
+		"unicode" : "u+1f9d9 u+200d u+2642 u+fe0f",
+		"emoji" : 🧙‍♂️,
+		"description" : "man mage"
+	},
+	{
+		"unicode" : "u+1f9d9 u+200d u+2640 u+fe0f",
+		"emoji" : 🧙‍♀️,
+		"description" : "woman mage"
+	},
+	{
+		"unicode" : "u+1f9da",
+		"emoji" : 🧚,
+		"description" : "fairy"
+	},
+	{
+		"unicode" : "u+1f9da u+200d u+2642 u+fe0f",
+		"emoji" : 🧚‍♂️,
+		"description" : "man fairy"
+	},
+	{
+		"unicode" : "u+1f9da u+200d u+2640 u+fe0f",
+		"emoji" : 🧚‍♀️,
+		"description" : "woman fairy"
+	},
+	{
+		"unicode" : "u+1f9db",
+		"emoji" : 🧛,
+		"description" : "vampire"
+	},
+	{
+		"unicode" : "u+1f9db u+200d u+2642 u+fe0f",
+		"emoji" : 🧛‍♂️,
+		"description" : "man vampire"
+	},
+	{
+		"unicode" : "u+1f9db u+200d u+2640 u+fe0f",
+		"emoji" : 🧛‍♀️,
+		"description" : "woman vampire"
+	},
+	{
+		"unicode" : "u+1f9dc",
+		"emoji" : 🧜,
+		"description" : "merperson"
+	},
+	{
+		"unicode" : "u+1f9dc u+200d u+2642 u+fe0f",
+		"emoji" : 🧜‍♂️,
+		"description" : "merman"
+	},
+	{
+		"unicode" : "u+1f9dc u+200d u+2640 u+fe0f",
+		"emoji" : 🧜‍♀️,
+		"description" : "mermaid"
+	},
+	{
+		"unicode" : "u+1f9dd",
+		"emoji" : 🧝,
+		"description" : "elf"
+	},
+	{
+		"unicode" : "u+1f9dd u+200d u+2642 u+fe0f",
+		"emoji" : 🧝‍♂️,
+		"description" : "man elf"
+	},
+	{
+		"unicode" : "u+1f9dd u+200d u+2640 u+fe0f",
+		"emoji" : 🧝‍♀️,
+		"description" : "woman elf"
+	},
+	{
+		"unicode" : "u+1f9de",
+		"emoji" : 🧞,
+		"description" : "genie"
+	},
+	{
+		"unicode" : "u+1f9de u+200d u+2642 u+fe0f",
+		"emoji" : 🧞‍♂️,
+		"description" : "man genie"
+	},
+	{
+		"unicode" : "u+1f9de u+200d u+2640 u+fe0f",
+		"emoji" : 🧞‍♀️,
+		"description" : "woman genie"
+	},
+	{
+		"unicode" : "u+1f9df",
+		"emoji" : 🧟,
+		"description" : "zombie"
+	},
+	{
+		"unicode" : "u+1f9df u+200d u+2642 u+fe0f",
+		"emoji" : 🧟‍♂️,
+		"description" : "man zombie"
+	},
+	{
+		"unicode" : "u+1f9df u+200d u+2640 u+fe0f",
+		"emoji" : 🧟‍♀️,
+		"description" : "woman zombie"
+	},
+	{
+		"unicode" : "u+1f486",
+		"emoji" : 💆,
+		"description" : "person getting massage"
+	},
+	{
+		"unicode" : "u+1f486 u+200d u+2642 u+fe0f",
+		"emoji" : 💆‍♂️,
+		"description" : "man getting massage"
+	},
+	{
+		"unicode" : "u+1f486 u+200d u+2640 u+fe0f",
+		"emoji" : 💆‍♀️,
+		"description" : "woman getting massage"
+	},
+	{
+		"unicode" : "u+1f487",
+		"emoji" : 💇,
+		"description" : "person getting haircut"
+	},
+	{
+		"unicode" : "u+1f487 u+200d u+2642 u+fe0f",
+		"emoji" : 💇‍♂️,
+		"description" : "man getting haircut"
+	},
+	{
+		"unicode" : "u+1f487 u+200d u+2640 u+fe0f",
+		"emoji" : 💇‍♀️,
+		"description" : "woman getting haircut"
+	},
+	{
+		"unicode" : "u+1f6b6",
+		"emoji" : 🚶,
+		"description" : "person walking"
+	},
+	{
+		"unicode" : "u+1f6b6 u+200d u+2642 u+fe0f",
+		"emoji" : 🚶‍♂️,
+		"description" : "man walking"
+	},
+	{
+		"unicode" : "u+1f6b6 u+200d u+2640 u+fe0f",
+		"emoji" : 🚶‍♀️,
+		"description" : "woman walking"
+	},
+	{
+		"unicode" : "u+1f3c3",
+		"emoji" : 🏃,
+		"description" : "person running"
+	},
+	{
+		"unicode" : "u+1f3c3 u+200d u+2642 u+fe0f",
+		"emoji" : 🏃‍♂️,
+		"description" : "man running"
+	},
+	{
+		"unicode" : "u+1f3c3 u+200d u+2640 u+fe0f",
+		"emoji" : 🏃‍♀️,
+		"description" : "woman running"
+	},
+	{
+		"unicode" : "u+1f483",
+		"emoji" : 💃,
+		"description" : "woman dancing"
+	},
+	{
+		"unicode" : "u+1f57a",
+		"emoji" : 🕺,
+		"description" : "man dancing"
+	},
+	{
+		"unicode" : "u+1f574",
+		"emoji" : 🕴,
+		"description" : "man in suit levitating"
+	},
+	{
+		"unicode" : "u+1f46f",
+		"emoji" : 👯,
+		"description" : "people with bunny ears"
+	},
+	{
+		"unicode" : "u+1f46f u+200d u+2642 u+fe0f",
+		"emoji" : 👯‍♂️,
+		"description" : "men with bunny ears"
+	},
+	{
+		"unicode" : "u+1f46f u+200d u+2640 u+fe0f",
+		"emoji" : 👯‍♀️,
+		"description" : "women with bunny ears"
+	},
+	{
+		"unicode" : "u+1f9d6",
+		"emoji" : 🧖,
+		"description" : "person in steamy room"
+	},
+	{
+		"unicode" : "u+1f9d6 u+200d u+2642 u+fe0f",
+		"emoji" : 🧖‍♂️,
+		"description" : "man in steamy room"
+	},
+	{
+		"unicode" : "u+1f9d6 u+200d u+2640 u+fe0f",
+		"emoji" : 🧖‍♀️,
+		"description" : "woman in steamy room"
+	},
+	{
+		"unicode" : "u+1f9d7",
+		"emoji" : 🧗,
+		"description" : "person climbing"
+	},
+	{
+		"unicode" : "u+1f9d7 u+200d u+2642 u+fe0f",
+		"emoji" : 🧗‍♂️,
+		"description" : "man climbing"
+	},
+	{
+		"unicode" : "u+1f9d7 u+200d u+2640 u+fe0f",
+		"emoji" : 🧗‍♀️,
+		"description" : "woman climbing"
+	},
+	{
+		"unicode" : "u+1f93a",
+		"emoji" : 🤺,
+		"description" : "person fencing"
+	},
+	{
+		"unicode" : "u+1f3c7",
+		"emoji" : 🏇,
+		"description" : "horse racing"
+	},
+	{
+		"unicode" : "u+26f7",
+		"emoji" : ⛷,
+		"description" : "skier"
+	},
+	{
+		"unicode" : "u+1f3c2",
+		"emoji" : 🏂,
+		"description" : "snowboarder"
+	},
+	{
+		"unicode" : "u+1f3cc",
+		"emoji" : 🏌,
+		"description" : "person golfing"
+	},
+	{
+		"unicode" : "u+1f3cc u+fe0f u+200d u+2642 u+fe0f",
+		"emoji" : 🏌️‍♂️,
+		"description" : "man golfing"
+	},
+	{
+		"unicode" : "u+1f3cc u+fe0f u+200d u+2640 u+fe0f",
+		"emoji" : 🏌️‍♀️,
+		"description" : "woman golfing"
+	},
+	{
+		"unicode" : "u+1f3c4",
+		"emoji" : 🏄,
+		"description" : "person surfing"
+	},
+	{
+		"unicode" : "u+1f3c4 u+200d u+2642 u+fe0f",
+		"emoji" : 🏄‍♂️,
+		"description" : "man surfing"
+	},
+	{
+		"unicode" : "u+1f3c4 u+200d u+2640 u+fe0f",
+		"emoji" : 🏄‍♀️,
+		"description" : "woman surfing"
+	},
+	{
+		"unicode" : "u+1f6a3",
+		"emoji" : 🚣,
+		"description" : "person rowing boat"
+	},
+	{
+		"unicode" : "u+1f6a3 u+200d u+2642 u+fe0f",
+		"emoji" : 🚣‍♂️,
+		"description" : "man rowing boat"
+	},
+	{
+		"unicode" : "u+1f6a3 u+200d u+2640 u+fe0f",
+		"emoji" : 🚣‍♀️,
+		"description" : "woman rowing boat"
+	},
+	{
+		"unicode" : "u+1f3ca",
+		"emoji" : 🏊,
+		"description" : "person swimming"
+	},
+	{
+		"unicode" : "u+1f3ca u+200d u+2642 u+fe0f",
+		"emoji" : 🏊‍♂️,
+		"description" : "man swimming"
+	},
+	{
+		"unicode" : "u+1f3ca u+200d u+2640 u+fe0f",
+		"emoji" : 🏊‍♀️,
+		"description" : "woman swimming"
+	},
+	{
+		"unicode" : "u+26f9",
+		"emoji" : ⛹,
+		"description" : "person bouncing ball"
+	},
+	{
+		"unicode" : "u+26f9 u+fe0f u+200d u+2642 u+fe0f",
+		"emoji" : ⛹️‍♂️,
+		"description" : "man bouncing ball"
+	},
+	{
+		"unicode" : "u+26f9 u+fe0f u+200d u+2640 u+fe0f",
+		"emoji" : ⛹️‍♀️,
+		"description" : "woman bouncing ball"
+	},
+	{
+		"unicode" : "u+1f3cb",
+		"emoji" : 🏋,
+		"description" : "person lifting weights"
+	},
+	{
+		"unicode" : "u+1f3cb u+fe0f u+200d u+2642 u+fe0f",
+		"emoji" : 🏋️‍♂️,
+		"description" : "man lifting weights"
+	},
+	{
+		"unicode" : "u+1f3cb u+fe0f u+200d u+2640 u+fe0f",
+		"emoji" : 🏋️‍♀️,
+		"description" : "woman lifting weights"
+	},
+	{
+		"unicode" : "u+1f6b4",
+		"emoji" : 🚴,
+		"description" : "person biking"
+	},
+	{
+		"unicode" : "u+1f6b4 u+200d u+2642 u+fe0f",
+		"emoji" : 🚴‍♂️,
+		"description" : "man biking"
+	},
+	{
+		"unicode" : "u+1f6b4 u+200d u+2640 u+fe0f",
+		"emoji" : 🚴‍♀️,
+		"description" : "woman biking"
+	},
+	{
+		"unicode" : "u+1f6b5",
+		"emoji" : 🚵,
+		"description" : "person mountain biking"
+	},
+	{
+		"unicode" : "u+1f6b5 u+200d u+2642 u+fe0f",
+		"emoji" : 🚵‍♂️,
+		"description" : "man mountain biking"
+	},
+	{
+		"unicode" : "u+1f6b5 u+200d u+2640 u+fe0f",
+		"emoji" : 🚵‍♀️,
+		"description" : "woman mountain biking"
+	},
+	{
+		"unicode" : "u+1f938",
+		"emoji" : 🤸,
+		"description" : "person cartwheeling"
+	},
+	{
+		"unicode" : "u+1f938 u+200d u+2642 u+fe0f",
+		"emoji" : 🤸‍♂️,
+		"description" : "man cartwheeling"
+	},
+	{
+		"unicode" : "u+1f938 u+200d u+2640 u+fe0f",
+		"emoji" : 🤸‍♀️,
+		"description" : "woman cartwheeling"
+	},
+	{
+		"unicode" : "u+1f93c",
+		"emoji" : 🤼,
+		"description" : "people wrestling"
+	},
+	{
+		"unicode" : "u+1f93c u+200d u+2642 u+fe0f",
+		"emoji" : 🤼‍♂️,
+		"description" : "men wrestling"
+	},
+	{
+		"unicode" : "u+1f93c u+200d u+2640 u+fe0f",
+		"emoji" : 🤼‍♀️,
+		"description" : "women wrestling"
+	},
+	{
+		"unicode" : "u+1f93d",
+		"emoji" : 🤽,
+		"description" : "person playing water polo"
+	},
+	{
+		"unicode" : "u+1f93d u+200d u+2642 u+fe0f",
+		"emoji" : 🤽‍♂️,
+		"description" : "man playing water polo"
+	},
+	{
+		"unicode" : "u+1f93d u+200d u+2640 u+fe0f",
+		"emoji" : 🤽‍♀️,
+		"description" : "woman playing water polo"
+	},
+	{
+		"unicode" : "u+1f93e",
+		"emoji" : 🤾,
+		"description" : "person playing handball"
+	},
+	{
+		"unicode" : "u+1f93e u+200d u+2642 u+fe0f",
+		"emoji" : 🤾‍♂️,
+		"description" : "man playing handball"
+	},
+	{
+		"unicode" : "u+1f93e u+200d u+2640 u+fe0f",
+		"emoji" : 🤾‍♀️,
+		"description" : "woman playing handball"
+	},
+	{
+		"unicode" : "u+1f939",
+		"emoji" : 🤹,
+		"description" : "person juggling"
+	},
+	{
+		"unicode" : "u+1f939 u+200d u+2642 u+fe0f",
+		"emoji" : 🤹‍♂️,
+		"description" : "man juggling"
+	},
+	{
+		"unicode" : "u+1f939 u+200d u+2640 u+fe0f",
+		"emoji" : 🤹‍♀️,
+		"description" : "woman juggling"
+	},
+	{
+		"unicode" : "u+1f9d8",
+		"emoji" : 🧘,
+		"description" : "person in lotus position"
+	},
+	{
+		"unicode" : "u+1f9d8 u+200d u+2642 u+fe0f",
+		"emoji" : 🧘‍♂️,
+		"description" : "man in lotus position"
+	},
+	{
+		"unicode" : "u+1f9d8 u+200d u+2640 u+fe0f",
+		"emoji" : 🧘‍♀️,
+		"description" : "woman in lotus position"
+	},
+	{
+		"unicode" : "u+1f6c0",
+		"emoji" : 🛀,
+		"description" : "person taking bath"
+	},
+	{
+		"unicode" : "u+1f6cc",
+		"emoji" : 🛌,
+		"description" : "person in bed"
+	},
+	{
+		"unicode" : "u+1f46d",
+		"emoji" : 👭,
+		"description" : "women holding hands"
+	},
+	{
+		"unicode" : "u+1f46b",
+		"emoji" : 👫,
+		"description" : "woman and man holding hands"
+	},
+	{
+		"unicode" : "u+1f46c",
+		"emoji" : 👬,
+		"description" : "men holding hands"
+	},
+	{
+		"unicode" : "u+1f48f",
+		"emoji" : 💏,
+		"description" : "kiss"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+2764 u+fe0f u+200d u+1f48b u+200d u+1f468",
+		"emoji" : 👩‍❤️‍,
+		"description" : "kiss woman"
+	},
+	{
+		"unicode" : "u+1f468 u+200d u+2764 u+fe0f u+200d u+1f48b u+200d u+1f468",
+		"emoji" : 👨‍❤️‍,
+		"description" : "kiss man"
+	},
+	{
+		"unicode" : "u+1f469 u+200d u+2764 u+fe0f u+200d u+1f48b u+200d u+1f469",
+		"emoji" : 👩‍❤️‍,
+		"description" : "kiss woman"
+	},
+	{
+		"unicode" : "u+1f491",
+		"emoji" : 💑,
+		"description" : "couple with heart"
+	},
+	{
+		"unicode" : "u+1f46a",
+		"emoji" : 👪,
+		"description" : "family"
+	},
+	{
+		"unicode" : "u+1f5e3",
+		"emoji" : 🗣,
+		"description" : "speaking head"
+	},
+	{
+		"unicode" : "u+1f464",
+		"emoji" : 👤,
+		"description" : "bust in silhouette"
+	},
+	{
+		"unicode" : "u+1f465",
+		"emoji" : 👥,
+		"description" : "busts in silhouette"
+	},
+	{
+		"unicode" : "u+1f463",
+		"emoji" : 👣,
+		"description" : "footprints"
+	},
+	{
+		"unicode" : "u+1f9b0",
+		"emoji" : 🦰,
+		"description" : "red hair"
+	},
+	{
+		"unicode" : "u+1f9b1",
+		"emoji" : 🦱,
+		"description" : "curly hair"
+	},
+	{
+		"unicode" : "u+1f9b3",
+		"emoji" : 🦳,
+		"description" : "white hair"
+	},
+	{
+		"unicode" : "u+1f9b2",
+		"emoji" : 🦲,
+		"description" : "bald"
+	},
+	{
+		"unicode" : "u+1f435",
+		"emoji" : 🐵,
+		"description" : "monkey face"
+	},
+	{
+		"unicode" : "u+1f412",
+		"emoji" : 🐒,
+		"description" : "monkey"
+	},
+	{
+		"unicode" : "u+1f98d",
+		"emoji" : 🦍,
+		"description" : "gorilla"
+	},
+	{
+		"unicode" : "u+1f436",
+		"emoji" : 🐶,
+		"description" : "dog face"
+	},
+	{
+		"unicode" : "u+1f415",
+		"emoji" : 🐕,
+		"description" : "dog"
+	},
+	{
+		"unicode" : "u+1f429",
+		"emoji" : 🐩,
+		"description" : "poodle"
+	},
+	{
+		"unicode" : "u+1f43a",
+		"emoji" : 🐺,
+		"description" : "wolf face"
+	},
+	{
+		"unicode" : "u+1f98a",
+		"emoji" : 🦊,
+		"description" : "fox face"
+	},
+	{
+		"unicode" : "u+1f99d",
+		"emoji" : 🦝,
+		"description" : "raccoon"
+	},
+	{
+		"unicode" : "u+1f431",
+		"emoji" : 🐱,
+		"description" : "cat face"
+	},
+	{
+		"unicode" : "u+1f408",
+		"emoji" : 🐈,
+		"description" : "cat"
+	},
+	{
+		"unicode" : "u+1f981",
+		"emoji" : 🦁,
+		"description" : "lion face"
+	},
+	{
+		"unicode" : "u+1f42f",
+		"emoji" : 🐯,
+		"description" : "tiger face"
+	},
+	{
+		"unicode" : "u+1f405",
+		"emoji" : 🐅,
+		"description" : "tiger"
+	},
+	{
+		"unicode" : "u+1f406",
+		"emoji" : 🐆,
+		"description" : "leopard"
+	},
+	{
+		"unicode" : "u+1f434",
+		"emoji" : 🐴,
+		"description" : "horse face"
+	},
+	{
+		"unicode" : "u+1f40e",
+		"emoji" : 🐎,
+		"description" : "horse"
+	},
+	{
+		"unicode" : "u+1f984",
+		"emoji" : 🦄,
+		"description" : "unicorn face"
+	},
+	{
+		"unicode" : "u+1f993",
+		"emoji" : 🦓,
+		"description" : "zebra"
+	},
+	{
+		"unicode" : "u+1f98c",
+		"emoji" : 🦌,
+		"description" : "deer"
+	},
+	{
+		"unicode" : "u+1f42e",
+		"emoji" : 🐮,
+		"description" : "cow face"
+	},
+	{
+		"unicode" : "u+1f402",
+		"emoji" : 🐂,
+		"description" : "ox"
+	},
+	{
+		"unicode" : "u+1f403",
+		"emoji" : 🐃,
+		"description" : "water buffalo"
+	},
+	{
+		"unicode" : "u+1f404",
+		"emoji" : 🐄,
+		"description" : "cow"
+	},
+	{
+		"unicode" : "u+1f437",
+		"emoji" : 🐷,
+		"description" : "pig face"
+	},
+	{
+		"unicode" : "u+1f416",
+		"emoji" : 🐖,
+		"description" : "pig"
+	},
+	{
+		"unicode" : "u+1f417",
+		"emoji" : 🐗,
+		"description" : "boar"
+	},
+	{
+		"unicode" : "u+1f43d",
+		"emoji" : 🐽,
+		"description" : "pig nose"
+	},
+	{
+		"unicode" : "u+1f40f",
+		"emoji" : 🐏,
+		"description" : "ram"
+	},
+	{
+		"unicode" : "u+1f411",
+		"emoji" : 🐑,
+		"description" : "ewe"
+	},
+	{
+		"unicode" : "u+1f410",
+		"emoji" : 🐐,
+		"description" : "goat"
+	},
+	{
+		"unicode" : "u+1f42a",
+		"emoji" : 🐪,
+		"description" : "camel"
+	},
+	{
+		"unicode" : "u+1f42b",
+		"emoji" : 🐫,
+		"description" : "two-hump camel"
+	},
+	{
+		"unicode" : "u+1f999",
+		"emoji" : 🦙,
+		"description" : "llama"
+	},
+	{
+		"unicode" : "u+1f992",
+		"emoji" : 🦒,
+		"description" : "giraffe"
+	},
+	{
+		"unicode" : "u+1f418",
+		"emoji" : 🐘,
+		"description" : "elephant"
+	},
+	{
+		"unicode" : "u+1f98f",
+		"emoji" : 🦏,
+		"description" : "rhinoceros"
+	},
+	{
+		"unicode" : "u+1f99b",
+		"emoji" : 🦛,
+		"description" : "hippopotamus"
+	},
+	{
+		"unicode" : "u+1f42d",
+		"emoji" : 🐭,
+		"description" : "mouse face"
+	},
+	{
+		"unicode" : "u+1f401",
+		"emoji" : 🐁,
+		"description" : "mouse"
+	},
+	{
+		"unicode" : "u+1f400",
+		"emoji" : 🐀,
+		"description" : "rat"
+	},
+	{
+		"unicode" : "u+1f439",
+		"emoji" : 🐹,
+		"description" : "hamster face"
+	},
+	{
+		"unicode" : "u+1f430",
+		"emoji" : 🐰,
+		"description" : "rabbit face"
+	},
+	{
+		"unicode" : "u+1f407",
+		"emoji" : 🐇,
+		"description" : "rabbit"
+	},
+	{
+		"unicode" : "u+1f43f",
+		"emoji" : 🐿,
+		"description" : "chipmunk"
+	},
+	{
+		"unicode" : "u+1f994",
+		"emoji" : 🦔,
+		"description" : "hedgehog"
+	},
+	{
+		"unicode" : "u+1f987",
+		"emoji" : 🦇,
+		"description" : "bat"
+	},
+	{
+		"unicode" : "u+1f43b",
+		"emoji" : 🐻,
+		"description" : "bear face"
+	},
+	{
+		"unicode" : "u+1f428",
+		"emoji" : 🐨,
+		"description" : "koala"
+	},
+	{
+		"unicode" : "u+1f43c",
+		"emoji" : 🐼,
+		"description" : "panda face"
+	},
+	{
+		"unicode" : "u+1f998",
+		"emoji" : 🦘,
+		"description" : "kangaroo"
+	},
+	{
+		"unicode" : "u+1f9a1",
+		"emoji" : 🦡,
+		"description" : "badger"
+	},
+	{
+		"unicode" : "u+1f43e",
+		"emoji" : 🐾,
+		"description" : "paw prints"
+	},
+	{
+		"unicode" : "u+1f983",
+		"emoji" : 🦃,
+		"description" : "turkey"
+	},
+	{
+		"unicode" : "u+1f414",
+		"emoji" : 🐔,
+		"description" : "chicken"
+	},
+	{
+		"unicode" : "u+1f413",
+		"emoji" : 🐓,
+		"description" : "rooster"
+	},
+	{
+		"unicode" : "u+1f423",
+		"emoji" : 🐣,
+		"description" : "hatching chick"
+	},
+	{
+		"unicode" : "u+1f424",
+		"emoji" : 🐤,
+		"description" : "baby chick"
+	},
+	{
+		"unicode" : "u+1f425",
+		"emoji" : 🐥,
+		"description" : "front-facing baby chick"
+	},
+	{
+		"unicode" : "u+1f426",
+		"emoji" : 🐦,
+		"description" : "bird"
+	},
+	{
+		"unicode" : "u+1f427",
+		"emoji" : 🐧,
+		"description" : "penguin"
+	},
+	{
+		"unicode" : "u+1f54a",
+		"emoji" : 🕊,
+		"description" : "dove"
+	},
+	{
+		"unicode" : "u+1f985",
+		"emoji" : 🦅,
+		"description" : "eagle"
+	},
+	{
+		"unicode" : "u+1f986",
+		"emoji" : 🦆,
+		"description" : "duck"
+	},
+	{
+		"unicode" : "u+1f9a2",
+		"emoji" : 🦢,
+		"description" : "swan"
+	},
+	{
+		"unicode" : "u+1f989",
+		"emoji" : 🦉,
+		"description" : "owl"
+	},
+	{
+		"unicode" : "u+1f99a",
+		"emoji" : 🦚,
+		"description" : "peacock"
+	},
+	{
+		"unicode" : "u+1f99c",
+		"emoji" : 🦜,
+		"description" : "parrot"
+	},
+	{
+		"unicode" : "u+1f438",
+		"emoji" : 🐸,
+		"description" : "frog face"
+	},
+	{
+		"unicode" : "u+1f40a",
+		"emoji" : 🐊,
+		"description" : "crocodile"
+	},
+	{
+		"unicode" : "u+1f422",
+		"emoji" : 🐢,
+		"description" : "turtle"
+	},
+	{
+		"unicode" : "u+1f98e",
+		"emoji" : 🦎,
+		"description" : "lizard"
+	},
+	{
+		"unicode" : "u+1f40d",
+		"emoji" : 🐍,
+		"description" : "snake"
+	},
+	{
+		"unicode" : "u+1f432",
+		"emoji" : 🐲,
+		"description" : "dragon face"
+	},
+	{
+		"unicode" : "u+1f409",
+		"emoji" : 🐉,
+		"description" : "dragon"
+	},
+	{
+		"unicode" : "u+1f995",
+		"emoji" : 🦕,
+		"description" : "sauropod"
+	},
+	"u+1f996"	🦖	t-"rex",
+	{
+		"unicode" : "u+1f433",
+		"emoji" : 🐳,
+		"description" : "spouting whale"
+	},
+	{
+		"unicode" : "u+1f40b",
+		"emoji" : 🐋,
+		"description" : "whale"
+	},
+	{
+		"unicode" : "u+1f42c",
+		"emoji" : 🐬,
+		"description" : "dolphin"
+	},
+	{
+		"unicode" : "u+1f41f",
+		"emoji" : 🐟,
+		"description" : "fish"
+	},
+	{
+		"unicode" : "u+1f420",
+		"emoji" : 🐠,
+		"description" : "tropical fish"
+	},
+	{
+		"unicode" : "u+1f421",
+		"emoji" : 🐡,
+		"description" : "blowfish"
+	},
+	{
+		"unicode" : "u+1f988",
+		"emoji" : 🦈,
+		"description" : "shark"
+	},
+	{
+		"unicode" : "u+1f419",
+		"emoji" : 🐙,
+		"description" : "octopus"
+	},
+	{
+		"unicode" : "u+1f41a",
+		"emoji" : 🐚,
+		"description" : "spiral shell"
+	},
+	{
+		"unicode" : "u+1f40c",
+		"emoji" : 🐌,
+		"description" : "snail"
+	},
+	{
+		"unicode" : "u+1f98b",
+		"emoji" : 🦋,
+		"description" : "butterfly"
+	},
+	{
+		"unicode" : "u+1f41b",
+		"emoji" : 🐛,
+		"description" : "bug"
+	},
+	{
+		"unicode" : "u+1f41c",
+		"emoji" : 🐜,
+		"description" : "ant"
+	},
+	{
+		"unicode" : "u+1f41d",
+		"emoji" : 🐝,
+		"description" : "honeybee"
+	},
+	{
+		"unicode" : "u+1f41e",
+		"emoji" : 🐞,
+		"description" : "lady beetle"
+	},
+	{
+		"unicode" : "u+1f997",
+		"emoji" : 🦗,
+		"description" : "cricket"
+	},
+	{
+		"unicode" : "u+1f577",
+		"emoji" : 🕷,
+		"description" : "spider"
+	},
+	{
+		"unicode" : "u+1f578",
+		"emoji" : 🕸,
+		"description" : "spider web"
+	},
+	{
+		"unicode" : "u+1f982",
+		"emoji" : 🦂,
+		"description" : "scorpion"
+	},
+	{
+		"unicode" : "u+1f99f",
+		"emoji" : 🦟,
+		"description" : "mosquito"
+	},
+	{
+		"unicode" : "u+1f9a0",
+		"emoji" : 🦠,
+		"description" : "microbe"
+	},
+	{
+		"unicode" : "u+1f490",
+		"emoji" : 💐,
+		"description" : "bouquet"
+	},
+	{
+		"unicode" : "u+1f338",
+		"emoji" : 🌸,
+		"description" : "cherry blossom"
+	},
+	{
+		"unicode" : "u+1f4ae",
+		"emoji" : 💮,
+		"description" : "white flower"
+	},
+	{
+		"unicode" : "u+1f3f5",
+		"emoji" : 🏵,
+		"description" : "rosette"
+	},
+	{
+		"unicode" : "u+1f339",
+		"emoji" : 🌹,
+		"description" : "rose"
+	},
+	{
+		"unicode" : "u+1f940",
+		"emoji" : 🥀,
+		"description" : "wilted flower"
+	},
+	{
+		"unicode" : "u+1f33a",
+		"emoji" : 🌺,
+		"description" : "hibiscus"
+	},
+	{
+		"unicode" : "u+1f33b",
+		"emoji" : 🌻,
+		"description" : "sunflower"
+	},
+	{
+		"unicode" : "u+1f33c",
+		"emoji" : 🌼,
+		"description" : "blossom"
+	},
+	{
+		"unicode" : "u+1f337",
+		"emoji" : 🌷,
+		"description" : "tulip"
+	},
+	{
+		"unicode" : "u+1f331",
+		"emoji" : 🌱,
+		"description" : "seedling"
+	},
+	{
+		"unicode" : "u+1f332",
+		"emoji" : 🌲,
+		"description" : "evergreen tree"
+	},
+	{
+		"unicode" : "u+1f333",
+		"emoji" : 🌳,
+		"description" : "deciduous tree"
+	},
+	{
+		"unicode" : "u+1f334",
+		"emoji" : 🌴,
+		"description" : "palm tree"
+	},
+	{
+		"unicode" : "u+1f335",
+		"emoji" : 🌵,
+		"description" : "cactus"
+	},
+	{
+		"unicode" : "u+1f33e",
+		"emoji" : 🌾,
+		"description" : "sheaf of rice"
+	},
+	{
+		"unicode" : "u+1f33f",
+		"emoji" : 🌿,
+		"description" : "herb"
+	},
+	"u+2618"	☘	☘"shamrock",
+	{
+		"unicode" : "u+1f340",
+		"emoji" : 🍀,
+		"description" : "four leaf clover"
+	},
+	{
+		"unicode" : "u+1f341",
+		"emoji" : 🍁,
+		"description" : "maple leaf"
+	},
+	{
+		"unicode" : "u+1f342",
+		"emoji" : 🍂,
+		"description" : "fallen leaf"
+	},
+	{
+		"unicode" : "u+1f343",
+		"emoji" : 🍃,
+		"description" : "leaf fluttering in wind"
+	},
+	{
+		"unicode" : "u+1f347",
+		"emoji" : 🍇,
+		"description" : "grapes"
+	},
+	{
+		"unicode" : "u+1f348",
+		"emoji" : 🍈,
+		"description" : "melon"
+	},
+	{
+		"unicode" : "u+1f349",
+		"emoji" : 🍉,
+		"description" : "watermelon"
+	},
+	{
+		"unicode" : "u+1f34a",
+		"emoji" : 🍊,
+		"description" : "tangerine"
+	},
+	{
+		"unicode" : "u+1f34b",
+		"emoji" : 🍋,
+		"description" : "lemon"
+	},
+	{
+		"unicode" : "u+1f34c",
+		"emoji" : 🍌,
+		"description" : "banana"
+	},
+	{
+		"unicode" : "u+1f34d",
+		"emoji" : 🍍,
+		"description" : "pineapple"
+	},
+	{
+		"unicode" : "u+1f96d",
+		"emoji" : 🥭,
+		"description" : "mango"
+	},
+	{
+		"unicode" : "u+1f34e",
+		"emoji" : 🍎,
+		"description" : "red apple"
+	},
+	{
+		"unicode" : "u+1f34f",
+		"emoji" : 🍏,
+		"description" : "green apple"
+	},
+	{
+		"unicode" : "u+1f350",
+		"emoji" : 🍐,
+		"description" : "pear"
+	},
+	{
+		"unicode" : "u+1f351",
+		"emoji" : 🍑,
+		"description" : "peach"
+	},
+	{
+		"unicode" : "u+1f352",
+		"emoji" : 🍒,
+		"description" : "cherries"
+	},
+	{
+		"unicode" : "u+1f353",
+		"emoji" : 🍓,
+		"description" : "strawberry"
+	},
+	{
+		"unicode" : "u+1f95d",
+		"emoji" : 🥝,
+		"description" : "kiwi fruit"
+	},
+	{
+		"unicode" : "u+1f345",
+		"emoji" : 🍅,
+		"description" : "tomato"
+	},
+	{
+		"unicode" : "u+1f965",
+		"emoji" : 🥥,
+		"description" : "coconut"
+	},
+	{
+		"unicode" : "u+1f951",
+		"emoji" : 🥑,
+		"description" : "avocado"
+	},
+	{
+		"unicode" : "u+1f346",
+		"emoji" : 🍆,
+		"description" : "eggplant"
+	},
+	{
+		"unicode" : "u+1f954",
+		"emoji" : 🥔,
+		"description" : "potato"
+	},
+	{
+		"unicode" : "u+1f955",
+		"emoji" : 🥕,
+		"description" : "carrot"
+	},
+	{
+		"unicode" : "u+1f33d",
+		"emoji" : 🌽,
+		"description" : "ear of corn"
+	},
+	{
+		"unicode" : "u+1f336",
+		"emoji" : 🌶,
+		"description" : "hot pepper"
+	},
+	{
+		"unicode" : "u+1f952",
+		"emoji" : 🥒,
+		"description" : "cucumber"
+	},
+	{
+		"unicode" : "u+1f96c",
+		"emoji" : 🥬,
+		"description" : "leafy green"
+	},
+	{
+		"unicode" : "u+1f966",
+		"emoji" : 🥦,
+		"description" : "broccoli"
+	},
+	{
+		"unicode" : "u+1f344",
+		"emoji" : 🍄,
+		"description" : "mushroom"
+	},
+	{
+		"unicode" : "u+1f95c",
+		"emoji" : 🥜,
+		"description" : "peanuts"
+	},
+	{
+		"unicode" : "u+1f330",
+		"emoji" : 🌰,
+		"description" : "chestnut"
+	},
+	{
+		"unicode" : "u+1f35e",
+		"emoji" : 🍞,
+		"description" : "bread"
+	},
+	{
+		"unicode" : "u+1f950",
+		"emoji" : 🥐,
+		"description" : "croissant"
+	},
+	{
+		"unicode" : "u+1f956",
+		"emoji" : 🥖,
+		"description" : "baguette bread"
+	},
+	{
+		"unicode" : "u+1f968",
+		"emoji" : 🥨,
+		"description" : "pretzel"
+	},
+	{
+		"unicode" : "u+1f96f",
+		"emoji" : 🥯,
+		"description" : "bagel"
+	},
+	{
+		"unicode" : "u+1f95e",
+		"emoji" : 🥞,
+		"description" : "pancakes"
+	},
+	{
+		"unicode" : "u+1f9c0",
+		"emoji" : 🧀,
+		"description" : "cheese wedge"
+	},
+	{
+		"unicode" : "u+1f356",
+		"emoji" : 🍖,
+		"description" : "meat on bone"
+	},
+	{
+		"unicode" : "u+1f357",
+		"emoji" : 🍗,
+		"description" : "poultry leg"
+	},
+	{
+		"unicode" : "u+1f969",
+		"emoji" : 🥩,
+		"description" : "cut of meat"
+	},
+	{
+		"unicode" : "u+1f953",
+		"emoji" : 🥓,
+		"description" : "bacon"
+	},
+	{
+		"unicode" : "u+1f354",
+		"emoji" : 🍔,
+		"description" : "hamburger"
+	},
+	{
+		"unicode" : "u+1f35f",
+		"emoji" : 🍟,
+		"description" : "french fries"
+	},
+	{
+		"unicode" : "u+1f355",
+		"emoji" : 🍕,
+		"description" : "pizza"
+	},
+	{
+		"unicode" : "u+1f32d",
+		"emoji" : 🌭,
+		"description" : "hot dog"
+	},
+	{
+		"unicode" : "u+1f96a",
+		"emoji" : 🥪,
+		"description" : "sandwich"
+	},
+	{
+		"unicode" : "u+1f32e",
+		"emoji" : 🌮,
+		"description" : "taco"
+	},
+	{
+		"unicode" : "u+1f32f",
+		"emoji" : 🌯,
+		"description" : "burrito"
+	},
+	{
+		"unicode" : "u+1f959",
+		"emoji" : 🥙,
+		"description" : "stuffed flatbread"
+	},
+	{
+		"unicode" : "u+1f95a",
+		"emoji" : 🥚,
+		"description" : "egg"
+	},
+	{
+		"unicode" : "u+1f373",
+		"emoji" : 🍳,
+		"description" : "cooking"
+	},
+	{
+		"unicode" : "u+1f958",
+		"emoji" : 🥘,
+		"description" : "shallow pan of food"
+	},
+	{
+		"unicode" : "u+1f372",
+		"emoji" : 🍲,
+		"description" : "pot of food"
+	},
+	{
+		"unicode" : "u+1f963",
+		"emoji" : 🥣,
+		"description" : "bowl with spoon"
+	},
+	{
+		"unicode" : "u+1f957",
+		"emoji" : 🥗,
+		"description" : "green salad"
+	},
+	{
+		"unicode" : "u+1f37f",
+		"emoji" : 🍿,
+		"description" : "popcorn"
+	},
+	{
+		"unicode" : "u+1f9c2",
+		"emoji" : 🧂,
+		"description" : "salt"
+	},
+	{
+		"unicode" : "u+1f96b",
+		"emoji" : 🥫,
+		"description" : "canned food"
+	},
+	{
+		"unicode" : "u+1f371",
+		"emoji" : 🍱,
+		"description" : "bento box"
+	},
+	{
+		"unicode" : "u+1f358",
+		"emoji" : 🍘,
+		"description" : "rice cracker"
+	},
+	{
+		"unicode" : "u+1f359",
+		"emoji" : 🍙,
+		"description" : "rice ball"
+	},
+	{
+		"unicode" : "u+1f35a",
+		"emoji" : 🍚,
+		"description" : "cooked rice"
+	},
+	{
+		"unicode" : "u+1f35b",
+		"emoji" : 🍛,
+		"description" : "curry rice"
+	},
+	{
+		"unicode" : "u+1f35c",
+		"emoji" : 🍜,
+		"description" : "steaming bowl"
+	},
+	{
+		"unicode" : "u+1f35d",
+		"emoji" : 🍝,
+		"description" : "spaghetti"
+	},
+	{
+		"unicode" : "u+1f360",
+		"emoji" : 🍠,
+		"description" : "roasted sweet potato"
+	},
+	{
+		"unicode" : "u+1f362",
+		"emoji" : 🍢,
+		"description" : "oden"
+	},
+	{
+		"unicode" : "u+1f363",
+		"emoji" : 🍣,
+		"description" : "sushi"
+	},
+	{
+		"unicode" : "u+1f364",
+		"emoji" : 🍤,
+		"description" : "fried shrimp"
+	},
+	{
+		"unicode" : "u+1f365",
+		"emoji" : 🍥,
+		"description" : "fish cake with swirl"
+	},
+	{
+		"unicode" : "u+1f96e",
+		"emoji" : 🥮,
+		"description" : "moon cake"
+	},
+	{
+		"unicode" : "u+1f361",
+		"emoji" : 🍡,
+		"description" : "dango"
+	},
+	{
+		"unicode" : "u+1f95f",
+		"emoji" : 🥟,
+		"description" : "dumpling"
+	},
+	{
+		"unicode" : "u+1f960",
+		"emoji" : 🥠,
+		"description" : "fortune cookie"
+	},
+	{
+		"unicode" : "u+1f961",
+		"emoji" : 🥡,
+		"description" : "takeout box"
+	},
+	{
+		"unicode" : "u+1f980",
+		"emoji" : 🦀,
+		"description" : "crab"
+	},
+	{
+		"unicode" : "u+1f99e",
+		"emoji" : 🦞,
+		"description" : "lobster"
+	},
+	{
+		"unicode" : "u+1f990",
+		"emoji" : 🦐,
+		"description" : "shrimp"
+	},
+	{
+		"unicode" : "u+1f991",
+		"emoji" : 🦑,
+		"description" : "squid"
+	},
+	{
+		"unicode" : "u+1f366",
+		"emoji" : 🍦,
+		"description" : "soft ice cream"
+	},
+	{
+		"unicode" : "u+1f367",
+		"emoji" : 🍧,
+		"description" : "shaved ice"
+	},
+	{
+		"unicode" : "u+1f368",
+		"emoji" : 🍨,
+		"description" : "ice cream"
+	},
+	{
+		"unicode" : "u+1f369",
+		"emoji" : 🍩,
+		"description" : "doughnut"
+	},
+	{
+		"unicode" : "u+1f36a",
+		"emoji" : 🍪,
+		"description" : "cookie"
+	},
+	{
+		"unicode" : "u+1f382",
+		"emoji" : 🎂,
+		"description" : "birthday cake"
+	},
+	{
+		"unicode" : "u+1f370",
+		"emoji" : 🍰,
+		"description" : "shortcake"
+	},
+	{
+		"unicode" : "u+1f9c1",
+		"emoji" : 🧁,
+		"description" : "cupcake"
+	},
+	{
+		"unicode" : "u+1f967",
+		"emoji" : 🥧,
+		"description" : "pie"
+	},
+	{
+		"unicode" : "u+1f36b",
+		"emoji" : 🍫,
+		"description" : "chocolate bar"
+	},
+	{
+		"unicode" : "u+1f36c",
+		"emoji" : 🍬,
+		"description" : "candy"
+	},
+	{
+		"unicode" : "u+1f36d",
+		"emoji" : 🍭,
+		"description" : "lollipop"
+	},
+	{
+		"unicode" : "u+1f36e",
+		"emoji" : 🍮,
+		"description" : "custard"
+	},
+	{
+		"unicode" : "u+1f36f",
+		"emoji" : 🍯,
+		"description" : "honey pot"
+	},
+	{
+		"unicode" : "u+1f37c",
+		"emoji" : 🍼,
+		"description" : "baby bottle"
+	},
+	{
+		"unicode" : "u+1f95b",
+		"emoji" : 🥛,
+		"description" : "glass of milk"
+	},
+	{
+		"unicode" : "u+2615",
+		"emoji" : ☕,
+		"description" : "hot beverage"
+	},
+	{
+		"unicode" : "u+1f375",
+		"emoji" : 🍵,
+		"description" : "teacup without handle"
+	},
+	{
+		"unicode" : "u+1f376",
+		"emoji" : 🍶,
+		"description" : "sake"
+	},
+	{
+		"unicode" : "u+1f37e",
+		"emoji" : 🍾,
+		"description" : "bottle with popping cork"
+	},
+	{
+		"unicode" : "u+1f377",
+		"emoji" : 🍷,
+		"description" : "wine glass"
+	},
+	{
+		"unicode" : "u+1f378",
+		"emoji" : 🍸,
+		"description" : "cocktail glass"
+	},
+	{
+		"unicode" : "u+1f379",
+		"emoji" : 🍹,
+		"description" : "tropical drink"
+	},
+	{
+		"unicode" : "u+1f37a",
+		"emoji" : 🍺,
+		"description" : "beer mug"
+	},
+	{
+		"unicode" : "u+1f37b",
+		"emoji" : 🍻,
+		"description" : "clinking beer mugs"
+	},
+	{
+		"unicode" : "u+1f942",
+		"emoji" : 🥂,
+		"description" : "clinking glasses"
+	},
+	{
+		"unicode" : "u+1f943",
+		"emoji" : 🥃,
+		"description" : "tumbler glass"
+	},
+	{
+		"unicode" : "u+1f964",
+		"emoji" : 🥤,
+		"description" : "cup with straw"
+	},
+	{
+		"unicode" : "u+1f962",
+		"emoji" : 🥢,
+		"description" : "chopsticks"
+	},
+	{
+		"unicode" : "u+1f37d",
+		"emoji" : 🍽,
+		"description" : "fork and knife with plate"
+	},
+	{
+		"unicode" : "u+1f374",
+		"emoji" : 🍴,
+		"description" : "fork and knife"
+	},
+	{
+		"unicode" : "u+1f944",
+		"emoji" : 🥄,
+		"description" : "spoon"
+	},
+	{
+		"unicode" : "u+1f52a",
+		"emoji" : 🔪,
+		"description" : "kitchen knife"
+	},
+	{
+		"unicode" : "u+1f3fa",
+		"emoji" : 🏺,
+		"description" : "amphora"
+	},
+	{
+		"unicode" : "u+1f30d",
+		"emoji" : 🌍,
+		"description" : "globe showing europe-africa"
+	},
+	{
+		"unicode" : "u+1f30e",
+		"emoji" : 🌎,
+		"description" : "globe showing americas"
+	},
+	{
+		"unicode" : "u+1f30f",
+		"emoji" : 🌏,
+		"description" : "globe showing asia-australia"
+	},
+	{
+		"unicode" : "u+1f310",
+		"emoji" : 🌐,
+		"description" : "globe with meridians"
+	},
+	{
+		"unicode" : "u+1f5fa",
+		"emoji" : 🗺,
+		"description" : "world map"
+	},
+	{
+		"unicode" : "u+1f5fe",
+		"emoji" : 🗾,
+		"description" : "map of Japan"
+	},
+	{
+		"unicode" : "u+1f9ed",
+		"emoji" : 🧭,
+		"description" : "compass"
+	},
+	{
+		"unicode" : "u+1f3d4",
+		"emoji" : 🏔,
+		"description" : "snow-capped mountain"
+	},
+	{
+		"unicode" : "u+26f0",
+		"emoji" : ⛰,
+		"description" : "mountain"
+	},
+	{
+		"unicode" : "u+1f30b",
+		"emoji" : 🌋,
+		"description" : "volcano"
+	},
+	{
+		"unicode" : "u+1f5fb",
+		"emoji" : 🗻,
+		"description" : "mount fuji"
+	},
+	{
+		"unicode" : "u+1f3d5",
+		"emoji" : 🏕,
+		"description" : "camping"
+	},
+	{
+		"unicode" : "u+1f3d6",
+		"emoji" : 🏖,
+		"description" : "beach with umbrella"
+	},
+	{
+		"unicode" : "u+1f3dc",
+		"emoji" : 🏜,
+		"description" : "desert"
+	},
+	{
+		"unicode" : "u+1f3dd",
+		"emoji" : 🏝,
+		"description" : "desert island"
+	},
+	{
+		"unicode" : "u+1f3de",
+		"emoji" : 🏞,
+		"description" : "national park"
+	},
+	{
+		"unicode" : "u+1f3df",
+		"emoji" : 🏟,
+		"description" : "stadium"
+	},
+	{
+		"unicode" : "u+1f3db",
+		"emoji" : 🏛,
+		"description" : "classical building"
+	},
+	{
+		"unicode" : "u+1f3d7",
+		"emoji" : 🏗,
+		"description" : "building construction"
+	},
+	{
+		"unicode" : "u+1f9f1",
+		"emoji" : 🧱,
+		"description" : "brick"
+	},
+	{
+		"unicode" : "u+1f3d8",
+		"emoji" : 🏘,
+		"description" : "houses"
+	},
+	{
+		"unicode" : "u+1f3da",
+		"emoji" : 🏚,
+		"description" : "derelict house"
+	},
+	{
+		"unicode" : "u+1f3e0",
+		"emoji" : 🏠,
+		"description" : "house"
+	},
+	{
+		"unicode" : "u+1f3e1",
+		"emoji" : 🏡,
+		"description" : "house with garden"
+	},
+	{
+		"unicode" : "u+1f3e2",
+		"emoji" : 🏢,
+		"description" : "office building"
+	},
+	{
+		"unicode" : "u+1f3e3",
+		"emoji" : 🏣,
+		"description" : "japanese post office"
+	},
+	{
+		"unicode" : "u+1f3e4",
+		"emoji" : 🏤,
+		"description" : "post office"
+	},
+	{
+		"unicode" : "u+1f3e5",
+		"emoji" : 🏥,
+		"description" : "hospital"
+	},
+	{
+		"unicode" : "u+1f3e6",
+		"emoji" : 🏦,
+		"description" : "bank"
+	},
+	{
+		"unicode" : "u+1f3e8",
+		"emoji" : 🏨,
+		"description" : "hotel"
+	},
+	{
+		"unicode" : "u+1f3e9",
+		"emoji" : 🏩,
+		"description" : "love hotel"
+	},
+	{
+		"unicode" : "u+1f3ea",
+		"emoji" : 🏪,
+		"description" : "convenience store"
+	},
+	{
+		"unicode" : "u+1f3eb",
+		"emoji" : 🏫,
+		"description" : "school"
+	},
+	{
+		"unicode" : "u+1f3ec",
+		"emoji" : 🏬,
+		"description" : "department store"
+	},
+	{
+		"unicode" : "u+1f3ed",
+		"emoji" : 🏭,
+		"description" : "factory"
+	},
+	{
+		"unicode" : "u+1f3ef",
+		"emoji" : 🏯,
+		"description" : "japanese castle"
+	},
+	{
+		"unicode" : "u+1f3f0",
+		"emoji" : 🏰,
+		"description" : "castle"
+	},
+	{
+		"unicode" : "u+1f492",
+		"emoji" : 💒,
+		"description" : "wedding"
+	},
+	{
+		"unicode" : "u+1f5fc",
+		"emoji" : 🗼,
+		"description" : "tokyo tower"
+	},
+	{
+		"unicode" : "u+1f5fd",
+		"emoji" : 🗽,
+		"description" : "statue of liberty"
+	},
+	{
+		"unicode" : "u+26ea",
+		"emoji" : ⛪,
+		"description" : "church"
+	},
+	{
+		"unicode" : "u+1f54c",
+		"emoji" : 🕌,
+		"description" : "mosque"
+	},
+	{
+		"unicode" : "u+1f54d",
+		"emoji" : 🕍,
+		"description" : "synagogue"
+	},
+	{
+		"unicode" : "u+26e9",
+		"emoji" : ⛩,
+		"description" : "shinto shrine"
+	},
+	{
+		"unicode" : "u+1f54b",
+		"emoji" : 🕋,
+		"description" : "kaaba"
+	},
+	{
+		"unicode" : "u+26f2",
+		"emoji" : ⛲,
+		"description" : "fountain"
+	},
+	{
+		"unicode" : "u+26fa",
+		"emoji" : ⛺,
+		"description" : "tent"
+	},
+	{
+		"unicode" : "u+1f301",
+		"emoji" : 🌁,
+		"description" : "foggy"
+	},
+	{
+		"unicode" : "u+1f303",
+		"emoji" : 🌃,
+		"description" : "night with stars"
+	},
+	{
+		"unicode" : "u+1f3d9",
+		"emoji" : 🏙,
+		"description" : "cityscape"
+	},
+	{
+		"unicode" : "u+1f304",
+		"emoji" : 🌄,
+		"description" : "sunrise over mountains"
+	},
+	{
+		"unicode" : "u+1f305",
+		"emoji" : 🌅,
+		"description" : "sunrise"
+	},
+	{
+		"unicode" : "u+1f306",
+		"emoji" : 🌆,
+		"description" : "cityscape at dusk"
+	},
+	{
+		"unicode" : "u+1f307",
+		"emoji" : 🌇,
+		"description" : "sunset"
+	},
+	{
+		"unicode" : "u+1f309",
+		"emoji" : 🌉,
+		"description" : "bridge at night"
+	},
+	{
+		"unicode" : "u+2668",
+		"emoji" : ♨,
+		"description" : "hot springs"
+	},
+	{
+		"unicode" : "u+1f30c",
+		"emoji" : 🌌,
+		"description" : "milky way"
+	},
+	{
+		"unicode" : "u+1f3a0",
+		"emoji" : 🎠,
+		"description" : "carousel horse"
+	},
+	{
+		"unicode" : "u+1f3a1",
+		"emoji" : 🎡,
+		"description" : "ferris wheel"
+	},
+	{
+		"unicode" : "u+1f3a2",
+		"emoji" : 🎢,
+		"description" : "roller coaster"
+	},
+	{
+		"unicode" : "u+1f488",
+		"emoji" : 💈,
+		"description" : "barber pole"
+	},
+	{
+		"unicode" : "u+1f3aa",
+		"emoji" : 🎪,
+		"description" : "circus tent"
+	},
+	{
+		"unicode" : "u+1f682",
+		"emoji" : 🚂,
+		"description" : "locomotive"
+	},
+	{
+		"unicode" : "u+1f683",
+		"emoji" : 🚃,
+		"description" : "railway car"
+	},
+	{
+		"unicode" : "u+1f684",
+		"emoji" : 🚄,
+		"description" : "high-speed train"
+	},
+	{
+		"unicode" : "u+1f685",
+		"emoji" : 🚅,
+		"description" : "bullet train"
+	},
+	{
+		"unicode" : "u+1f686",
+		"emoji" : 🚆,
+		"description" : "train"
+	},
+	{
+		"unicode" : "u+1f687",
+		"emoji" : 🚇,
+		"description" : "metro"
+	},
+	{
+		"unicode" : "u+1f688",
+		"emoji" : 🚈,
+		"description" : "light rail"
+	},
+	{
+		"unicode" : "u+1f689",
+		"emoji" : 🚉,
+		"description" : "station"
+	},
+	{
+		"unicode" : "u+1f68a",
+		"emoji" : 🚊,
+		"description" : "tram"
+	},
+	{
+		"unicode" : "u+1f69d",
+		"emoji" : 🚝,
+		"description" : "monorail"
+	},
+	{
+		"unicode" : "u+1f69e",
+		"emoji" : 🚞,
+		"description" : "mountain railway"
+	},
+	{
+		"unicode" : "u+1f68b",
+		"emoji" : 🚋,
+		"description" : "tram car"
+	},
+	{
+		"unicode" : "u+1f68c",
+		"emoji" : 🚌,
+		"description" : "bus"
+	},
+	{
+		"unicode" : "u+1f68d",
+		"emoji" : 🚍,
+		"description" : "oncoming bus"
+	},
+	{
+		"unicode" : "u+1f68e",
+		"emoji" : 🚎,
+		"description" : "trolleybus"
+	},
+	{
+		"unicode" : "u+1f690",
+		"emoji" : 🚐,
+		"description" : "minibus"
+	},
+	{
+		"unicode" : "u+1f691",
+		"emoji" : 🚑,
+		"description" : "ambulance"
+	},
+	{
+		"unicode" : "u+1f692",
+		"emoji" : 🚒,
+		"description" : "fire engine"
+	},
+	{
+		"unicode" : "u+1f693",
+		"emoji" : 🚓,
+		"description" : "police car"
+	},
+	{
+		"unicode" : "u+1f694",
+		"emoji" : 🚔,
+		"description" : "oncoming police car"
+	},
+	{
+		"unicode" : "u+1f695",
+		"emoji" : 🚕,
+		"description" : "taxi"
+	},
+	{
+		"unicode" : "u+1f696",
+		"emoji" : 🚖,
+		"description" : "oncoming taxi"
+	},
+	{
+		"unicode" : "u+1f697",
+		"emoji" : 🚗,
+		"description" : "automobile"
+	},
+	{
+		"unicode" : "u+1f698",
+		"emoji" : 🚘,
+		"description" : "oncoming automobile"
+	},
+	{
+		"unicode" : "u+1f699",
+		"emoji" : 🚙,
+		"description" : "sport utility vehicle"
+	},
+	{
+		"unicode" : "u+1f69a",
+		"emoji" : 🚚,
+		"description" : "delivery truck"
+	},
+	{
+		"unicode" : "u+1f69b",
+		"emoji" : 🚛,
+		"description" : "articulated lorry"
+	},
+	{
+		"unicode" : "u+1f69c",
+		"emoji" : 🚜,
+		"description" : "tractor"
+	},
+	{
+		"unicode" : "u+1f3ce",
+		"emoji" : 🏎,
+		"description" : "racing car"
+	},
+	{
+		"unicode" : "u+1f3cd",
+		"emoji" : 🏍,
+		"description" : "motorcycle"
+	},
+	{
+		"unicode" : "u+1f6f5",
+		"emoji" : 🛵,
+		"description" : "motor scooter"
+	},
+	{
+		"unicode" : "u+1f6b2",
+		"emoji" : 🚲,
+		"description" : "bicycle"
+	},
+	{
+		"unicode" : "u+1f6f4",
+		"emoji" : 🛴,
+		"description" : "kick scooter"
+	},
+	{
+		"unicode" : "u+1f6f9",
+		"emoji" : 🛹,
+		"description" : "skateboard"
+	},
+	{
+		"unicode" : "u+1f68f",
+		"emoji" : 🚏,
+		"description" : "bus stop"
+	},
+	{
+		"unicode" : "u+1f6e3",
+		"emoji" : 🛣,
+		"description" : "motorway"
+	},
+	{
+		"unicode" : "u+1f6e4",
+		"emoji" : 🛤,
+		"description" : "railway track"
+	},
+	{
+		"unicode" : "u+1f6e2",
+		"emoji" : 🛢,
+		"description" : "oil drum"
+	},
+	{
+		"unicode" : "u+26fd",
+		"emoji" : ⛽,
+		"description" : "fuel pump"
+	},
+	{
+		"unicode" : "u+1f6a8",
+		"emoji" : 🚨,
+		"description" : "police car light"
+	},
+	{
+		"unicode" : "u+1f6a5",
+		"emoji" : 🚥,
+		"description" : "horizontal traffic light"
+	},
+	{
+		"unicode" : "u+1f6a6",
+		"emoji" : 🚦,
+		"description" : "vertical traffic light"
+	},
+	{
+		"unicode" : "u+1f6d1",
+		"emoji" : 🛑,
+		"description" : "stop sign"
+	},
+	{
+		"unicode" : "u+1f6a7",
+		"emoji" : 🚧,
+		"description" : "construction"
+	},
+	{
+		"unicode" : "u+2693",
+		"emoji" : ⚓,
+		"description" : "anchor"
+	},
+	{
+		"unicode" : "u+26f5",
+		"emoji" : ⛵,
+		"description" : "sailboat"
+	},
+	{
+		"unicode" : "u+1f6f6",
+		"emoji" : 🛶,
+		"description" : "canoe"
+	},
+	{
+		"unicode" : "u+1f6a4",
+		"emoji" : 🚤,
+		"description" : "speedboat"
+	},
+	{
+		"unicode" : "u+1f6f3",
+		"emoji" : 🛳,
+		"description" : "passenger ship"
+	},
+	{
+		"unicode" : "u+26f4",
+		"emoji" : ⛴,
+		"description" : "ferry"
+	},
+	{
+		"unicode" : "u+1f6e5",
+		"emoji" : 🛥,
+		"description" : "motor boat"
+	},
+	{
+		"unicode" : "u+1f6a2",
+		"emoji" : 🚢,
+		"description" : "ship"
+	},
+	{
+		"unicode" : "u+2708",
+		"emoji" : ✈,
+		"description" : "airplane"
+	},
+	{
+		"unicode" : "u+1f6e9",
+		"emoji" : 🛩,
+		"description" : "small airplane"
+	},
+	{
+		"unicode" : "u+1f6eb",
+		"emoji" : 🛫,
+		"description" : "airplane departure"
+	},
+	{
+		"unicode" : "u+1f6ec",
+		"emoji" : 🛬,
+		"description" : "airplane arrival"
+	},
+	{
+		"unicode" : "u+1f4ba",
+		"emoji" : 💺,
+		"description" : "seat"
+	},
+	{
+		"unicode" : "u+1f681",
+		"emoji" : 🚁,
+		"description" : "helicopter"
+	},
+	{
+		"unicode" : "u+1f69f",
+		"emoji" : 🚟,
+		"description" : "suspension railway"
+	},
+	{
+		"unicode" : "u+1f6a0",
+		"emoji" : 🚠,
+		"description" : "mountain cableway"
+	},
+	{
+		"unicode" : "u+1f6a1",
+		"emoji" : 🚡,
+		"description" : "aerial tramway"
+	},
+	{
+		"unicode" : "u+1f6f0",
+		"emoji" : 🛰,
+		"description" : "satellite"
+	},
+	{
+		"unicode" : "u+1f680",
+		"emoji" : 🚀,
+		"description" : "rocket"
+	},
+	{
+		"unicode" : "u+1f6f8",
+		"emoji" : 🛸,
+		"description" : "flying saucer"
+	},
+	{
+		"unicode" : "u+1f6ce",
+		"emoji" : 🛎,
+		"description" : "bellhop bell"
+	},
+	{
+		"unicode" : "u+1f9f3",
+		"emoji" : 🧳,
+		"description" : "luggage"
+	},
+	{
+		"unicode" : "u+231b",
+		"emoji" : ⌛,
+		"description" : "hourglass done"
+	},
+	{
+		"unicode" : "u+23f3",
+		"emoji" : ⏳,
+		"description" : "hourglass not done"
+	},
+	{
+		"unicode" : "u+231a",
+		"emoji" : ⌚,
+		"description" : "watch"
+	},
+	{
+		"unicode" : "u+23f0",
+		"emoji" : ⏰,
+		"description" : "alarm clock"
+	},
+	{
+		"unicode" : "u+23f1",
+		"emoji" : ⏱,
+		"description" : "stopwatch"
+	},
+	{
+		"unicode" : "u+23f2",
+		"emoji" : ⏲,
+		"description" : "timer clock"
+	},
+	{
+		"unicode" : "u+1f570",
+		"emoji" : 🕰,
+		"description" : "mantelpiece clock"
+	},
+	{
+		"unicode" : "u+1f55b",
+		"emoji" : 🕛,
+		"description" : "twelve o'clock"
+	},
+	{
+		"unicode" : "u+1f567",
+		"emoji" : 🕧,
+		"description" : "twelve-thirty"
+	},
+	{
+		"unicode" : "u+1f550",
+		"emoji" : 🕐,
+		"description" : "one o'clock"
+	},
+	{
+		"unicode" : "u+1f55c",
+		"emoji" : 🕜,
+		"description" : "one-thirty"
+	},
+	{
+		"unicode" : "u+1f551",
+		"emoji" : 🕑,
+		"description" : "two o'clock"
+	},
+	{
+		"unicode" : "u+1f55d",
+		"emoji" : 🕝,
+		"description" : "two-thirty"
+	},
+	{
+		"unicode" : "u+1f552",
+		"emoji" : 🕒,
+		"description" : "three o'clock"
+	},
+	{
+		"unicode" : "u+1f55e",
+		"emoji" : 🕞,
+		"description" : "three-thirty"
+	},
+	{
+		"unicode" : "u+1f553",
+		"emoji" : 🕓,
+		"description" : "four o'clock"
+	},
+	{
+		"unicode" : "u+1f55f",
+		"emoji" : 🕟,
+		"description" : "four-thirty"
+	},
+	{
+		"unicode" : "u+1f554",
+		"emoji" : 🕔,
+		"description" : "five o'clock"
+	},
+	{
+		"unicode" : "u+1f560",
+		"emoji" : 🕠,
+		"description" : "five-thirty"
+	},
+	{
+		"unicode" : "u+1f555",
+		"emoji" : 🕕,
+		"description" : "six o'clock"
+	},
+	{
+		"unicode" : "u+1f561",
+		"emoji" : 🕡,
+		"description" : "six-thirty"
+	},
+	{
+		"unicode" : "u+1f556",
+		"emoji" : 🕖,
+		"description" : "seven o'clock"
+	},
+	{
+		"unicode" : "u+1f562",
+		"emoji" : 🕢,
+		"description" : "seven-thirty"
+	},
+	{
+		"unicode" : "u+1f557",
+		"emoji" : 🕗,
+		"description" : "eight o'clock"
+	},
+	{
+		"unicode" : "u+1f563",
+		"emoji" : 🕣,
+		"description" : "eight-thirty"
+	},
+	{
+		"unicode" : "u+1f558",
+		"emoji" : 🕘,
+		"description" : "nine o'clock"
+	},
+	{
+		"unicode" : "u+1f564",
+		"emoji" : 🕤,
+		"description" : "nine-thirty"
+	},
+	{
+		"unicode" : "u+1f559",
+		"emoji" : 🕙,
+		"description" : "ten o'clock"
+	},
+	{
+		"unicode" : "u+1f565",
+		"emoji" : 🕥,
+		"description" : "ten-thirty"
+	},
+	{
+		"unicode" : "u+1f55a",
+		"emoji" : 🕚,
+		"description" : "eleven o'clock"
+	},
+	{
+		"unicode" : "u+1f566",
+		"emoji" : 🕦,
+		"description" : "eleven-thirty"
+	},
+	{
+		"unicode" : "u+1f311",
+		"emoji" : 🌑,
+		"description" : "new moon"
+	},
+	{
+		"unicode" : "u+1f312",
+		"emoji" : 🌒,
+		"description" : "waxing crescent moon"
+	},
+	{
+		"unicode" : "u+1f313",
+		"emoji" : 🌓,
+		"description" : "first quarter moon"
+	},
+	{
+		"unicode" : "u+1f314",
+		"emoji" : 🌔,
+		"description" : "waxing gibbous moon"
+	},
+	{
+		"unicode" : "u+1f315",
+		"emoji" : 🌕,
+		"description" : "full moon"
+	},
+	{
+		"unicode" : "u+1f316",
+		"emoji" : 🌖,
+		"description" : "waning gibbous moon"
+	},
+	{
+		"unicode" : "u+1f317",
+		"emoji" : 🌗,
+		"description" : "last quarter moon"
+	},
+	{
+		"unicode" : "u+1f318",
+		"emoji" : 🌘,
+		"description" : "waning crescent moon"
+	},
+	{
+		"unicode" : "u+1f319",
+		"emoji" : 🌙,
+		"description" : "crescent moon"
+	},
+	{
+		"unicode" : "u+1f31a",
+		"emoji" : 🌚,
+		"description" : "new moon face"
+	},
+	{
+		"unicode" : "u+1f31b",
+		"emoji" : 🌛,
+		"description" : "first quarter moon face"
+	},
+	{
+		"unicode" : "u+1f31c",
+		"emoji" : 🌜,
+		"description" : "last quarter moon face"
+	},
+	{
+		"unicode" : "u+1f321",
+		"emoji" : 🌡,
+		"description" : "thermometer"
+	},
+	{
+		"unicode" : "u+2600",
+		"emoji" : ☀,
+		"description" : "sun"
+	},
+	{
+		"unicode" : "u+1f31d",
+		"emoji" : 🌝,
+		"description" : "full moon face"
+	},
+	{
+		"unicode" : "u+1f31e",
+		"emoji" : 🌞,
+		"description" : "sun with face"
+	},
+	{
+		"unicode" : "u+2b50",
+		"emoji" : ⭐,
+		"description" : "star"
+	},
+	{
+		"unicode" : "u+1f31f",
+		"emoji" : 🌟,
+		"description" : "glowing star"
+	},
+	{
+		"unicode" : "u+1f320",
+		"emoji" : 🌠,
+		"description" : "shooting star"
+	},
+	{
+		"unicode" : "u+2601",
+		"emoji" : ☁,
+		"description" : "cloud"
+	},
+	{
+		"unicode" : "u+26c5",
+		"emoji" : ⛅,
+		"description" : "sun behind cloud"
+	},
+	{
+		"unicode" : "u+26c8",
+		"emoji" : ⛈,
+		"description" : "cloud with lightning and rain"
+	},
+	{
+		"unicode" : "u+1f324",
+		"emoji" : 🌤,
+		"description" : "sun behind small cloud"
+	},
+	{
+		"unicode" : "u+1f325",
+		"emoji" : 🌥,
+		"description" : "sun behind large cloud"
+	},
+	{
+		"unicode" : "u+1f326",
+		"emoji" : 🌦,
+		"description" : "sun behind rain cloud"
+	},
+	{
+		"unicode" : "u+1f327",
+		"emoji" : 🌧,
+		"description" : "cloud with rain"
+	},
+	{
+		"unicode" : "u+1f328",
+		"emoji" : 🌨,
+		"description" : "cloud with snow"
+	},
+	{
+		"unicode" : "u+1f329",
+		"emoji" : 🌩,
+		"description" : "cloud with lightning"
+	},
+	{
+		"unicode" : "u+1f32a",
+		"emoji" : 🌪,
+		"description" : "tornado"
+	},
+	{
+		"unicode" : "u+1f32b",
+		"emoji" : 🌫,
+		"description" : "fog"
+	},
+	{
+		"unicode" : "u+1f32c",
+		"emoji" : 🌬,
+		"description" : "wind face"
+	},
+	{
+		"unicode" : "u+1f300",
+		"emoji" : 🌀,
+		"description" : "cyclone"
+	},
+	{
+		"unicode" : "u+1f308",
+		"emoji" : 🌈,
+		"description" : "rainbow"
+	},
+	{
+		"unicode" : "u+1f302",
+		"emoji" : 🌂,
+		"description" : "closed umbrella"
+	},
+	{
+		"unicode" : "u+2602",
+		"emoji" : ☂,
+		"description" : "umbrella"
+	},
+	{
+		"unicode" : "u+2614",
+		"emoji" : ☔,
+		"description" : "umbrella with rain drops"
+	},
+	{
+		"unicode" : "u+26f1",
+		"emoji" : ⛱,
+		"description" : "umbrella on ground"
+	},
+	{
+		"unicode" : "u+26a1",
+		"emoji" : ⚡,
+		"description" : "high voltage"
+	},
+	{
+		"unicode" : "u+2744",
+		"emoji" : ❄,
+		"description" : "snowflake"
+	},
+	{
+		"unicode" : "u+2603",
+		"emoji" : ☃,
+		"description" : "snowman"
+	},
+	{
+		"unicode" : "u+26c4",
+		"emoji" : ⛄,
+		"description" : "snowman without snow"
+	},
+	{
+		"unicode" : "u+2604",
+		"emoji" : ☄,
+		"description" : "comet"
+	},
+	{
+		"unicode" : "u+1f525",
+		"emoji" : 🔥,
+		"description" : "fire"
+	},
+	{
+		"unicode" : "u+1f4a7",
+		"emoji" : 💧,
+		"description" : "droplet"
+	},
+	{
+		"unicode" : "u+1f30a",
+		"emoji" : 🌊,
+		"description" : "water wave"
+	},
+	{
+		"unicode" : "u+1f383",
+		"emoji" : 🎃,
+		"description" : "jack-o-lantern"
+	},
+	{
+		"unicode" : "u+1f384",
+		"emoji" : 🎄,
+		"description" : "christmas tree"
+	},
+	{
+		"unicode" : "u+1f386",
+		"emoji" : 🎆,
+		"description" : "fireworks"
+	},
+	{
+		"unicode" : "u+1f387",
+		"emoji" : 🎇,
+		"description" : "sparkler"
+	},
+	{
+		"unicode" : "u+1f9e8",
+		"emoji" : 🧨,
+		"description" : "firecracker"
+	},
+	{
+		"unicode" : "u+2728",
+		"emoji" : ✨,
+		"description" : "sparkles"
+	},
+	{
+		"unicode" : "u+1f388",
+		"emoji" : 🎈,
+		"description" : "balloon"
+	},
+	{
+		"unicode" : "u+1f389",
+		"emoji" : 🎉,
+		"description" : "party popper"
+	},
+	{
+		"unicode" : "u+1f38a",
+		"emoji" : 🎊,
+		"description" : "confetti ball"
+	},
+	{
+		"unicode" : "u+1f38b",
+		"emoji" : 🎋,
+		"description" : "tanabata tree"
+	},
+	{
+		"unicode" : "u+1f38d",
+		"emoji" : 🎍,
+		"description" : "pine decoration"
+	},
+	{
+		"unicode" : "u+1f38e",
+		"emoji" : 🎎,
+		"description" : "japanese dolls"
+	},
+	{
+		"unicode" : "u+1f38f",
+		"emoji" : 🎏,
+		"description" : "carp streamer"
+	},
+	{
+		"unicode" : "u+1f390",
+		"emoji" : 🎐,
+		"description" : "wind chime"
+	},
+	{
+		"unicode" : "u+1f391",
+		"emoji" : 🎑,
+		"description" : "moon viewing ceremony"
+	},
+	{
+		"unicode" : "u+1f9e7",
+		"emoji" : 🧧,
+		"description" : "red envelope"
+	},
+	{
+		"unicode" : "u+1f380",
+		"emoji" : 🎀,
+		"description" : "ribbon"
+	},
+	{
+		"unicode" : "u+1f381",
+		"emoji" : 🎁,
+		"description" : "wrapped gift"
+	},
+	{
+		"unicode" : "u+1f397",
+		"emoji" : 🎗,
+		"description" : "reminder ribbon"
+	},
+	{
+		"unicode" : "u+1f39f",
+		"emoji" : 🎟,
+		"description" : "admission tickets"
+	},
+	{
+		"unicode" : "u+1f3ab",
+		"emoji" : 🎫,
+		"description" : "ticket"
+	},
+	{
+		"unicode" : "u+1f396",
+		"emoji" : 🎖,
+		"description" : "military medal"
+	},
+	{
+		"unicode" : "u+1f3c6",
+		"emoji" : 🏆,
+		"description" : "trophy"
+	},
+	{
+		"unicode" : "u+1f3c5",
+		"emoji" : 🏅,
+		"description" : "sports medal"
+	},
+	{
+		"unicode" : "u+1f947",
+		"emoji" : 🥇,
+		"description" : "1st place medal"
+	},
+	{
+		"unicode" : "u+1f948",
+		"emoji" : 🥈,
+		"description" : "2nd place medal"
+	},
+	"u+1f949"	🥉	"3rd place medal"
+]
