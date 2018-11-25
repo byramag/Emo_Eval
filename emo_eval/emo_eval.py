@@ -24,8 +24,7 @@ from time import time
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split, cross_validate, cross_val_score
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.decomposition import PCA, TruncatedSVD
 from sklearn import svm
 from sklearn.linear_model import SGDClassifier
@@ -33,68 +32,19 @@ from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.ensemble import RandomForestClassifier
 #from pandas_ml import ConfusionMatrix
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-import emoji, emot
 from nltk.tokenize import TweetTokenizer 
 from nltk.stem import WordNetLemmatizer
 import nltk
 nltk.download('wordnet')
+
+from .preprocessing import preprocess
 
 # import spacy
 # import en_core_web_sm
 # Spacy model setup
 # nlp = en_core_web_sm.load()
 
-#Keerthi - Preprocessing start
-def preprocess(instances):
-    """TODO: documentation
-    """
-    # Separating the labels and strings into separate arrays & concatenating turns from bag of words
-    row_strings = []
-    labels = []
-    for _, instance in instances.iterrows():
-        row_strings.append(instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3'])
-        labels.append(instance['label'])
-    
-    with open('abbreviations.json', 'r') as abbr_data: 
-        ABBREVIATION_MAP = json.load(abbr_data)
 
-    #Expands abbreviations in a sentence according to a abbreviation_mapping.
-    # expand word contractions (can't -> cannot) and shorthand (lol -> laugh out loud) -- minor or no impact
-    
-    def expand_abbreviations(sentence, abbreviation_mapping): 
-
-        abbreviations_pattern = re.compile('({})'.format('|'.join(abbreviation_mapping.keys())),  
-                                          flags=re.IGNORECASE|re.DOTALL) 
-        def expand_match(abbreviation): 
-            match = abbreviation.group(0) 
-            first_char = match[0] 
-            expanded_abbreviation = abbreviation_mapping.get(match) if abbreviation_mapping.get(match) else abbreviation_mapping.get(match.lower())   
-            if not expanded_abbreviation:
-                return match
-            expanded_abbreviation = first_char+expanded_abbreviation[1:] 
-            return expanded_abbreviation
-
-        expanded_sentence = abbreviations_pattern.sub(expand_match, sentence) 
-        return expanded_sentence 
-
-
-    #Replaces emoticons with their meanings
-    # emojis replacement -- good
-    # smileys replacement -- minor or no impact
-    def desmilify(text):
-        
-        emoticons = emot.emoticons(text)
-        if type(emoticons) == dict:
-            for loc,mean,value in zip(emoticons.get('location'),emoticons.get('mean'),emoticons.get('value')):
-                text = text.replace(value,':%s:'%'_'.join(mean.split()))
-        return text
-        
-    row_strings = [desmilify(emoji.demojize(expand_abbreviations(txt, ABBREVIATION_MAP))) for txt in row_strings]
-
-    return row_strings, labels
-#Keerthi - Preprocessing end
-
-#Keerthi - Feature reduction start
 def feature_extraction(samples):
     """TODO: documentation
     """
@@ -136,8 +86,6 @@ def feature_extraction(samples):
     # print (pd.DataFrame(data=x_train_mat.toarray(), columns=tfidfBoW.get_feature_names()))
 
     return x_train_mat
-
-#Keerthi - feature reduction end
 
 
 def train_crossval(x_train, y_train, folds=5):
@@ -184,7 +132,7 @@ def train_crossval(x_train, y_train, folds=5):
 def main(train_file, sample_size=1, folds=5):
     # Reading training file into dataframe
     print("Reading train file"); t = time()
-    instances = pd.read_csv(file_name, sep='\t', header=0)
+    instances = pd.read_csv(train_file, sep='\t', header=0)
     print("Finished reading train file in %0.3fsec\n" % (time()-t))
 
     print("Sampling training data"); t = time()
