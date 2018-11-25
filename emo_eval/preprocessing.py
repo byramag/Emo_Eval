@@ -16,6 +16,11 @@ def preprocess(instances):
         bow = re.sub(r"\?{2,}", " ? ", bow) # Separate/truncate ? into their own tokens
         bow = re.sub(r"(?<!\.)\.(?!\.)", "", bow) # Remove periods
         bow = re.sub(r"[,\*]", "", bow)
+
+        emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
+        emo_reg = re.sub(r'\*\|', "", emo_reg)
+        bow = re.sub(emo_reg, r" \1 ", bow)
+
         row_strings.append(bow)
         labels.append(instance['label'])
     
