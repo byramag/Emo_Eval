@@ -1,6 +1,25 @@
 import json
 import re
 import emoji, emot
+#import spacy
+
+
+#Expands abbreviations in a sentence according to a abbreviation_mapping.
+# expand word contractions (can't -> cannot) and shorthand (lol -> laugh out loud) -- minor or no impact
+def expand_abbreviations(sentence, abbreviation_mapping): 
+    abbreviations_pattern = re.compile('({})'.format('|'.join(abbreviation_mapping.keys())),  
+                                        flags=re.IGNORECASE|re.DOTALL) 
+    def expand_match(abbreviation): 
+        match = abbreviation.group(0) 
+        first_char = match[0] 
+        expanded_abbreviation = abbreviation_mapping.get(match) if abbreviation_mapping.get(match) else abbreviation_mapping.get(match.lower())   
+        if not expanded_abbreviation:
+            return match
+        expanded_abbreviation = first_char+expanded_abbreviation[1:] 
+        return expanded_abbreviation
+
+    expanded_sentence = abbreviations_pattern.sub(expand_match, sentence) 
+    return expanded_sentence 
 
 
 def preprocess(instances):
@@ -9,43 +28,39 @@ def preprocess(instances):
     # Separating the labels and strings into separate arrays & concatenating turns from bag of words
     row_strings = []
     labels = []
-    for _, instance in instances.iterrows():
-        bow = instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3']
-        bow = re.sub(r"\.{2,}", "\.\.\.", bow) # Separate/truncate elipsis into their own tokens
-        bow = re.sub(r"!{2,}", " ! ", bow) # Separate/truncate ! into their own tokens
-        bow = re.sub(r"\?{2,}", " ? ", bow) # Separate/truncate ? into their own tokens
-        bow = re.sub(r"(?<!\.)\.(?!\.)", "", bow) # Remove periods
-        bow = re.sub(r"[,\*]", "", bow)
-
-        emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
-        emo_reg = re.sub(r'\*\|', "", emo_reg)
-        bow = re.sub(emo_reg, r" \1 ", bow)
-
-        row_strings.append(bow)
-        labels.append(instance['label'])
     
     with open('abbreviations.json', 'r') as abbr_data: 
         ABBREVIATION_MAP = json.load(abbr_data)
 
-    #Expands abbreviations in a sentence according to a abbreviation_mapping.
-    # expand word contractions (can't -> cannot) and shorthand (lol -> laugh out loud) -- minor or no impact
+    for _, instance in instances.iterrows():
+
+        # Concatenate all three conversation turns into single string
+        instance_string = instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3']
+
+        # Cleaning
+        print("Before:",instance_string.encode("utf-8"))
+
+        instance_string = re.sub(r"\.\.+", r" ... ", instance_string.lower()) # Separate/truncate elipsis into their own tokens
+        instance_string = re.sub(r"!+", r" ! ", instance_string) # Separate/truncate ! into their own tokens
+        instance_string = re.sub(r"\?+", r" ? ", instance_string) # Separate/truncate ? into their own tokens
+        instance_string = re.sub(r"[\,\.\'\"\~\`\-\>\<]", r"", instance_string) # Remove non descriptive punctuation
+
+        emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
+        emo_reg = re.sub(r'\*\|', "", emo_reg)
+        bow = re.sub(emo_reg, r" \1 ", instance_string)
+
+        # Mapping abbreviations to full versions
+        expand_abbreviations(instance_string, ABBREVIATION_MAP)
+
+        # TODO stopword removal with spacy
+
+        print("After:",instance_string.encode("utf-8"))
+
+        row_strings.append(instance_string)
+        labels.append(instance['label'])
+        
     
-    def expand_abbreviations(sentence, abbreviation_mapping): 
-
-        abbreviations_pattern = re.compile('({})'.format('|'.join(abbreviation_mapping.keys())),  
-                                          flags=re.IGNORECASE|re.DOTALL) 
-        def expand_match(abbreviation): 
-            match = abbreviation.group(0) 
-            first_char = match[0] 
-            expanded_abbreviation = abbreviation_mapping.get(match) if abbreviation_mapping.get(match) else abbreviation_mapping.get(match.lower())   
-            if not expanded_abbreviation:
-                return match
-            expanded_abbreviation = first_char+expanded_abbreviation[1:] 
-            return expanded_abbreviation
-
-        expanded_sentence = abbreviations_pattern.sub(expand_match, sentence) 
-        return expanded_sentence 
-
+    exit(0)
 
     #Replaces emoticons with their meanings
     # emojis replacement -- good
@@ -58,6 +73,6 @@ def preprocess(instances):
                 text = text.replace(value,':%s:'%'_'.join(mean.split()))
         return text
         
-    row_strings = [desmilify(emoji.demojize(expand_abbreviations(txt, ABBREVIATION_MAP))) for txt in row_strings]
+    row_strings = [desmilify(emoji.demojize(txt)) for txt in row_strings]
 
     return row_strings, labels
