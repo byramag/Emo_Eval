@@ -21,6 +21,15 @@ def expand_abbreviations(sentence, abbreviation_mapping):
     expanded_sentence = abbreviations_pattern.sub(expand_match, sentence) 
     return expanded_sentence 
 
+#Replaces emoticons with their meanings
+# emojis replacement -- good
+# smileys replacement -- minor or no impact
+def desmilify(text):
+    emoticons = emot.emoticons(text)
+    if type(emoticons) == dict:
+        for loc,mean,value in zip(emoticons.get('location'),emoticons.get('mean'),emoticons.get('value')):
+            text = text.replace(value,':%s:'%'_'.join(mean.split()))
+    return text
 
 def preprocess(instances):
     """TODO: documentation
@@ -42,31 +51,23 @@ def preprocess(instances):
         instance_string = re.sub(r"\?+", r" ? ", instance_string) # Separate/truncate ? into their own tokens
         instance_string = re.sub(r"[\,\'\"\~\`]", r"", instance_string) # Remove non descriptive punctuation
         instance_string = re.sub(r"(?<!\.)\.(?!\.)", r"", instance_string)
-        instance_string = re.sub(r"([A-Za-z])\1{2,}\s", r"\1 ", instance_string) # Truncate repeating characters at the end of a word
+        instance_string = re.sub(r"([A-Za-z])\1{2,}\s", r"\1 ", instance_string) # Truncate repeating characters at the end of a word such as youuuuu -> you
+        instance_string = re.sub(r"\s([A-Za-z]{2,3})\1{2,}\s", r" \1 ", instance_string) # Truncate repeating sequences such as hahaha -> haha
 
-        emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
-        emo_reg = re.sub(r'\*\|', "", emo_reg)
-        instance_string = re.sub(emo_reg, r" \1 ", instance_string)
-
+        # emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
+        # emo_reg = re.sub(r'\*\|', "", emo_reg)
+        instance_string = re.sub('([\U00010000-\U0010ffff])', r" \1 ", instance_string)
+        
         # Mapping abbreviations to full versions
-        expand_abbreviations(instance_string, ABBREVIATION_MAP)
+        instance_string = expand_abbreviations(instance_string, ABBREVIATION_MAP)
 
         # TODO stopword removal with spacy
 
+        # Replacing emojis with text descriptions
+        # instance_string = desmilify(instance_string)
+
+        # Adding cleaned string and label for feature extraction
         row_strings.append(instance_string)
         labels.append(instance['label'])
-
-    #Replaces emoticons with their meanings
-    # emojis replacement -- good
-    # smileys replacement -- minor or no impact
-    def desmilify(text):
-        
-        emoticons = emot.emoticons(text)
-        if type(emoticons) == dict:
-            for loc,mean,value in zip(emoticons.get('location'),emoticons.get('mean'),emoticons.get('value')):
-                text = text.replace(value,':%s:'%'_'.join(mean.split()))
-        return text
-        
-    row_strings = [desmilify(emoji.demojize(txt)) for txt in row_strings]
 
     return row_strings, labels
