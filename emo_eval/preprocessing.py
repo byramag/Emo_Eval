@@ -43,7 +43,9 @@ def preprocess(instances):
         instance_string = re.sub(r"\.\.+", r" ... ", instance_string.lower()) # Separate/truncate elipsis into their own tokens
         instance_string = re.sub(r"!+", r" ! ", instance_string) # Separate/truncate ! into their own tokens
         instance_string = re.sub(r"\?+", r" ? ", instance_string) # Separate/truncate ? into their own tokens
-        instance_string = re.sub(r"[\,\.\'\"\~\`\-\>\<]", r"", instance_string) # Remove non descriptive punctuation
+        instance_string = re.sub(r"[\,\'\"\~\`]", r"", instance_string) # Remove non descriptive punctuation
+        instance_string = re.sub(r"(?<!\.)\.(?!\.)", r"", instance_string)
+        instance_string = re.sub(r"([A-Za-z])\1{2,}\s", r"\1 ", instance_string) # Truncate repeating characters at the end of a word
 
         emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
         emo_reg = re.sub(r'\*\|', "", emo_reg)
