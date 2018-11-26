@@ -33,13 +33,10 @@ def preprocess(instances):
         ABBREVIATION_MAP = json.load(abbr_data)
 
     for _, instance in instances.iterrows():
-
         # Concatenate all three conversation turns into single string
         instance_string = instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3']
 
         # Cleaning
-        print("Before:",instance_string.encode("utf-8"))
-
         instance_string = re.sub(r"\.\.+", r" ... ", instance_string.lower()) # Separate/truncate elipsis into their own tokens
         instance_string = re.sub(r"!+", r" ! ", instance_string) # Separate/truncate ! into their own tokens
         instance_string = re.sub(r"\?+", r" ? ", instance_string) # Separate/truncate ? into their own tokens
@@ -49,20 +46,15 @@ def preprocess(instances):
 
         emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
         emo_reg = re.sub(r'\*\|', "", emo_reg)
-        bow = re.sub(emo_reg, r" \1 ", instance_string)
+        instance_string = re.sub(emo_reg, r" \1 ", instance_string)
 
         # Mapping abbreviations to full versions
         expand_abbreviations(instance_string, ABBREVIATION_MAP)
 
         # TODO stopword removal with spacy
 
-        print("After:",instance_string.encode("utf-8"))
-
         row_strings.append(instance_string)
         labels.append(instance['label'])
-        
-    
-    exit(0)
 
     #Replaces emoticons with their meanings
     # emojis replacement -- good
