@@ -1,7 +1,7 @@
 import json
 import re
 import emoji, emot
-#import spacy
+from spacy.lang.en.stop_words import STOP_WORDS
 
 
 #Expands abbreviations in a sentence according to a abbreviation_mapping.
@@ -34,13 +34,12 @@ def desmilify(text):
 def preprocess(instances):
     """TODO: documentation
     """
-    # Separating the labels and strings into separate arrays & concatenating turns from bag of words
-    row_strings = []
-    labels = []
-    
     with open('abbreviations.json', 'r') as abbr_data: 
         ABBREVIATION_MAP = json.load(abbr_data)
 
+    # Separating the labels and strings into separate arrays & concatenating turns from bag of words
+    row_strings = []
+    labels = []
     for _, instance in instances.iterrows():
         # Concatenate all three conversation turns into single string
         instance_string = instance['turn1'] + ' ' + instance['turn2'] + ' ' + instance['turn3']
@@ -54,14 +53,13 @@ def preprocess(instances):
         instance_string = re.sub(r"([A-Za-z])\1{2,}\s", r"\1 ", instance_string) # Truncate repeating characters at the end of a word such as youuuuu -> you
         instance_string = re.sub(r"\s([A-Za-z]{2,3})\1{2,}\s", r" \1 ", instance_string) # Truncate repeating sequences such as hahaha -> haha
 
-        # emo_reg = '(' + '|'.join(['|'.join(x.split()) for x in emot.EMO_UNICODE.values()]) + ')'
-        # emo_reg = re.sub(r'\*\|', "", emo_reg)
-        instance_string = re.sub('([\U00010000-\U0010ffff])', r" \1 ", instance_string)
+        instance_string = re.sub('([\U00010000-\U0010ffff])', r" \1 ", instance_string) # Insert spaces around emojis so they are counted separately
         
         # Mapping abbreviations to full versions
         instance_string = expand_abbreviations(instance_string, ABBREVIATION_MAP)
 
-        # TODO stopword removal with spacy
+        # Remove stopwords with SpaCy
+        # instance_string = " ".join([x for x in instance_string.split() if x not in STOP_WORDS])
 
         # Replacing emojis with text descriptions
         # instance_string = desmilify(instance_string)
