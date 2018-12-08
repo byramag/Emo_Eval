@@ -18,6 +18,7 @@ import numpy as np
 import pandas as pd
 from time import time
 from pprint import pprint
+from getopt import getopt, GetoptError
 from sklearn import svm
 from sklearn.linear_model import SGDClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -47,15 +48,50 @@ def parseArgs(argv):
         sample_size: float (0,1]
             - Percentage of sample set to randomly sample
     """
-    file_name = r"data/train.txt"
-    sample_size = 1
+    argv = argv[1:]
 
-    if len(sys.argv) > 1:
-        file_name = sys.argv[1]
-    if len(sys.argv) > 2:
-        sample_size = float(sys.argv[2])
+    params = {
+        "file_name": r"data/train.txt",
+        "sample_size": 1,
+        "folds": 5,
+        "tfidf": True,
+        "embeddings": False,
+        "clean_data": True,
+        "expand_abbrs": False,
+        "desmile": False,
+        "rm_stops": False,
+        "adjs": False
+    }
+
+    long_args = ["input=", "cv", "no-tfidf", "embeddings", "no-clean", "exp-abbrs", "desmile", "rm-stopwords", "only-adjs"]
+    try:
+        opts, _ = getopt(sys.argv[1:], "i:s", long_args)
+    except GetoptError as e:
+        raise ValueError(e)
     
-    return file_name, sample_size
+    for opt, arg in opts:
+        if opt in ('-i', '--input'):
+            params['file_name'] = arg
+        elif opt == '-s':
+            params['sample_size'] = float(arg)
+        elif opt == '--folds':
+            params['folds'] = int(arg)
+        elif opt == '--no-tfidf':
+            params['tfidf'] = False
+        elif opt == '--embeddings':
+            params['embeddings'] = True
+        elif opt == '--no-clean':
+            params['clean_data'] = False
+        elif opt == '--exp-abbrs':
+            params['expand_abbrs'] = True
+        elif opt == '--desmile':
+            params['desmile'] = True
+        elif opt == '--rm-stopwords':
+            params['rm_stops'] = True
+        elif opt == '--only-adjs':
+            params['adjs'] = True
+    
+    return params
 
 
 def train_crossval(x_train, y_train, folds=5):
@@ -94,26 +130,37 @@ def train_crossval(x_train, y_train, folds=5):
     return metrics
 
 
-def main(train_file, sample_size=1, folds=5):
+def main(argv):
     t0 = time()
+
+    print("Parsing command line args...", end="", flush=True); t = time()
+    params = parseArgs(argv)
+    print("finished %0.3fsec\n" % (time()-t))
 
     # Reading training file into dataframe
     print("Reading train file"); t = time()
-    instances = pd.read_csv(train_file, sep='\t', header=0)
+    instances = pd.read_csv(params['file_name'], sep='\t', header=0)
     print("Finished reading train file in %0.3fsec\n" % (time()-t))
 
     print("Sampling training data"); t = time()
-    instances = instances.sample(frac=sample_size)
+    instances = instances.sample(frac=params['sample_size'])
     print("Finished sampling training data in %0.3fsec\n" % (time()-t))
 
     # Apply preprocessing
-    x_all, y_all = preprocess(instances)
+    x_all, y_all = preprocess(instances,
+        clean_data=params['clean_data'],
+        expand_abbrs=params['expand_abbrs'],
+        desmile=params['desmile'],
+        remove_stopwords=params['rm_stops'],
+        only_adjs=params['adjs'])
 
     # Perform feature extraction
-    x_all = feature_extraction(x_all)
+    x_all = feature_extraction(x_all,
+        tfidf=params['tfidf'],
+        embeddings=params['embeddings'])
 
     # Train model
-    metrics = train_crossval(x_all, y_all, folds)
+    metrics = train_crossval(x_all, y_all, folds=params['folds'])
 
     print("Total time for pipeline: %0.3fsec\n" % (time()-t0))
     pprint(metrics)
@@ -121,5 +168,4 @@ def main(train_file, sample_size=1, folds=5):
 
 
 if __name__ == '__main__':
-    file_name, sample_size = parseArgs(sys.argv)
-    main(file_name, sample_size=sample_size)
+    main(sys.argv)

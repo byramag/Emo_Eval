@@ -66,7 +66,7 @@ def desmilify(text):
     return text
 
 
-def preprocess(instances, clean_data=True, expand_abbrs=True, desmile=False, remove_stopwords=False, only_adjs=True):
+def preprocess(instances, clean_data=True, expand_abbrs=False, desmile=False, remove_stopwords=False, only_adjs=False):
     """First stage of pipeline, takes in training instances and applies
     preprocessing rules to them, returning two lists, one of the preprocessed
     samples and the other of the corresponding sample labels

@@ -5,7 +5,7 @@ from scipy.sparse import hstack
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
 
-def feature_extraction(samples, only_adjs=True, tfidf=True, embeddings=True):
+def feature_extraction(samples, tfidf=True, embeddings=False):
     """Second stage of pipeline, takes in the string training samples and
     returns vector representations of them to be used in modeling
 
