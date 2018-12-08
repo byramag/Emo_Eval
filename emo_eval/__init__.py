@@ -1,2 +1,3 @@
 from .preprocessing import preprocess
-from .emo_eval import main, feature_extraction, train_crossval
+from .feature_extraction import feature_extraction
+from .emo_eval import parseArgs, main, train_crossval

@@ -1,4 +1,4 @@
-{  
+ABBREVIATION_MAP = {  
     "ain't":"is not",
     "aren't":"are not",
     "can't":"cannot",
