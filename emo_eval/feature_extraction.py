@@ -65,7 +65,7 @@ def feature_extraction(samples, tfidf=True, embeddings=False):
         x_train = hstack([tfidf_vectors, word_embeddings])
         print("finished in {:.3f}s".format(time()-t))
     elif tfidf:
-        x_train = tfidf
+        x_train = tfidf_vectors
     elif embeddings:
         x_train = word_embeddings
 

@@ -160,7 +160,8 @@ def main(argv):
         embeddings=params['embeddings'])
 
     # Train model
-    metrics = train_crossval(x_all, y_all, folds=params['folds'])
+    metrics = train_crossval(x_all, y_all,
+        folds=params['folds'])
 
     print("Total time for pipeline: %0.3fsec\n" % (time()-t0))
     pprint(metrics)
