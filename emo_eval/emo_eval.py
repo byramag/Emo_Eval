@@ -17,6 +17,7 @@ import re, sys, json
 from time import time
 import numpy as np
 import pandas as pd
+import spacy
 from pprint import pprint
 from sklearn.model_selection import train_test_split, cross_validate, cross_val_score
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
@@ -25,6 +26,7 @@ from sklearn import svm
 from sklearn.linear_model import SGDClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.ensemble import RandomForestClassifier
+from scipy.sparse import hstack
 #from pandas_ml import ConfusionMatrix
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from nltk.tokenize import TweetTokenizer 
@@ -33,11 +35,6 @@ import nltk
 nltk.download('wordnet')
 
 from .preprocessing import preprocess
-
-# import spacy
-# import en_core_web_sm
-# Spacy model setup
-# nlp = en_core_web_sm.load()
 
 
 def feature_extraction(samples):
@@ -55,9 +52,21 @@ def feature_extraction(samples):
     # WordNetLemmatizer -- minor or no impact
     # Dimensionality reduction -- values in the range from 5 to 5000 lowers score
 
+    nlp = spacy.load('en_core_web_lg')
+
+    print("\tGenerating spacy documents for samples...", end="", flush=True); t= time()
+    docs = [nlp(x) for x in samples]
+    print("finished in {:.3f}s".format(time()-t))
+
+    print("\tExtracting adjectives...", end="", flush=True); t= time()
+    for i, sample in enumerate(samples):
+        sample = [token for token in docs[i] if token.pos_ == 'ADJ']
+    print("finished in {:.3f}s".format(time()-t))
+
+    print("\tCalculating tf-idf vectors...", end="", flush=True); t= time()
     tw = TweetTokenizer()
     wnl = WordNetLemmatizer()
-    x_train_mat = TfidfVectorizer(
+    tfidf_vectors = TfidfVectorizer(
         ngram_range=(1,2),
         min_df=10,
         max_df=0.95,
@@ -65,7 +74,16 @@ def feature_extraction(samples):
         norm='l2', 
         smooth_idf=True,
         tokenizer=lambda x:[wnl.lemmatize(t) for t in tw.tokenize(x)]
-    ).fit_transform(samples)
+    ).fit_transform([" ".join([token.text for token in s]) for s in samples])
+    print("finished in {:.3f}s".format(time()-t))
+
+    print("\tCalculating word embedding vectors...", end="", flush=True); t= time()
+    word_embeddings = [x.vector for x in samples]
+    print("finished in {:.3f}s".format(time()-t))
+
+    print("\tConcatenating matrices...", end="", flush=True); t= time()
+    x_train_mat = hstack([tfidf_vectors, word_embeddings])
+    print("finished in {:.3f}s".format(time()-t))
 
     # # Dimensionality reduction - THIS CURRENTLY GIVES BAD RESULTS
     # print("Dimensionality reduction")
@@ -95,26 +113,22 @@ def train_crossval(x_train, y_train, folds=5):
     # nbClassifier = GaussianNB().fit(x_train_mat.toarray(), y_train)
     # print("Training Naive Bayes finished in %0.3fsec\n" % (time()-t))
 
-    print("Training Random Forest")
-    t = time()
+    print("Training Random Forest"); t = time()
     rfClassifier = RandomForestClassifier(n_estimators=100, random_state=0)
     metrics['RF'] = cross_validate(rfClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False, n_jobs=10)
     print("Training Random Forest finished in %0.3fsec\n" % (time()-t))
 
-    print("Training Linear SVM")
-    t = time()
+    print("Training Linear SVM"); t = time()
     svmLinClassifier = svm.SVC(kernel='linear', C=1)
     metrics['Linear SVM'] = cross_validate(svmLinClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False, n_jobs=-1)
     print("Training Linear SVM finished in %0.3fsec\n" % (time()-t))
 
-#Keerthi - SGD classifier start
-    print("Training SGD")
-    t = time()
+    #Keerthi - SGD classifier
+    print("Training SGD"); t = time()
     sgd_params = {'alpha': 2.4583743122823383e-05, 'l1_ratio': 0.7561414418634068}
     sgdClassifier = SGDClassifier(max_iter=1000,penalty='elasticnet',loss='hinge',**sgd_params)
     metrics['SGD'] = cross_validate(sgdClassifier, x_train, y_train, scoring=scoring, cv=folds, return_train_score=False,n_jobs=3)
     print("Training SGD finished in %0.3fsec\n" % (time()-t))
-#Keerthi - SGD classifier end
 
     for model in metrics:
         for metric in metrics[model]:
@@ -124,6 +138,8 @@ def train_crossval(x_train, y_train, folds=5):
 
 
 def main(train_file, sample_size=1, folds=5):
+    t0 = time()
+
     # Reading training file into dataframe
     print("Reading train file"); t = time()
     instances = pd.read_csv(train_file, sep='\t', header=0)
@@ -143,11 +159,11 @@ def main(train_file, sample_size=1, folds=5):
 
     metrics = train_crossval(x_all, y_all, folds)
 
+    print("Total time for pipeline: %0.3fsec\n" % (time()-t0))
+
     pprint(metrics)
 
 if __name__ == '__main__':
-    t = time()
-
     # Taking arg of file name, if no arg given, assumes train file is in the `data/` directory
     file_name = r"data/train.txt"
     sample_size = 1
@@ -157,5 +173,3 @@ if __name__ == '__main__':
         sample_size = float(sys.argv[2])
     
     main(file_name, sample_size=sample_size)
-
-    print("Total time for pipeline: %0.3fsec\n" % (time()-t))
