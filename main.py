@@ -1,5 +1,4 @@
 import sys
-from emo_eval import main, parseArgs
+from emo_eval import main
 
-file_name, sample_size = parseArgs(sys.argv)
-main("data/train.txt", sample_size=sample_size)
+main(sys.argv)
