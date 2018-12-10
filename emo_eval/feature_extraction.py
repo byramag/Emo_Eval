@@ -1,11 +1,13 @@
+import re
 import nltk
 import spacy
+import numpy as np
 from time import time
 from scipy.sparse import hstack
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
 
-def feature_extraction(samples, tfidf=True, embeddings=False):
+def feature_extraction(samples, tfidf=True, embeddings=False, emojis=False):
     """Second stage of pipeline, takes in the string training samples and
     returns vector representations of them to be used in modeling
 
@@ -33,7 +35,7 @@ def feature_extraction(samples, tfidf=True, embeddings=False):
     # WordNetLemmatizer -- minor or no impact
     # Dimensionality reduction -- values in the range from 5 to 5000 lowers score
 
-    if not tfidf and not embeddings:
+    if not tfidf and not embeddings and not emojis:
         raise ValueError("One or more of 'tfidf' and 'embeddings' arguments must be True")
 
     print("Creating feature vectors"); t = time()
@@ -59,15 +61,41 @@ def feature_extraction(samples, tfidf=True, embeddings=False):
         print("\tCalculating word embedding vectors...", end="", flush=True); t = time()
         word_embeddings = [nlp(x).vector for x in samples]
         print("finished in {:.3f}s".format(time()-t))
+    
+    if emojis:
+        ev = np.empty((0,len(samples)))
+        col_map = dict()
+        for i, sample in enumerate(samples):
+            emojis = re.findall(r'[\U00010000-\U0010ffff]', sample)
+            for emoji in emojis:
+                if emoji not in col_map:
+                    col_map[emoji] = len(ev)
+                    ev = np.append(ev, np.zeros((1,len(samples))), axis=0)
+                ev[col_map[emoji]][i] += 1
+        emoji_vectors = ev.T
 
-    if tfidf and embeddings:
+    if tfidf and embeddings and emojis:
+        print("\tConcatenating matrices...", end="", flush=True); t = time()
+        x_train = hstack([tfidf_vectors, word_embeddings, emoji_vectors])
+        print("finished in {:.3f}s".format(time()-t))
+    elif tfidf and embeddings:
         print("\tConcatenating matrices...", end="", flush=True); t = time()
         x_train = hstack([tfidf_vectors, word_embeddings])
+        print("finished in {:.3f}s".format(time()-t))
+    elif tfidf and emojis:
+        print("\tConcatenating matrices...", end="", flush=True); t = time()
+        x_train = hstack([tfidf_vectors, emoji_vectors])
+        print("finished in {:.3f}s".format(time()-t)) 
+    elif embeddings and emojis:
+        print("\tConcatenating matrices...", end="", flush=True); t = time()
+        x_train = hstack([embeddings, emoji_vectors])
         print("finished in {:.3f}s".format(time()-t))
     elif tfidf:
         x_train = tfidf_vectors
     elif embeddings:
         x_train = word_embeddings
+    elif emojis:
+        x_train = emoji_vectors
 
     # # Dimensionality reduction - THIS CURRENTLY GIVES BAD RESULTS
     # print("Dimensionality reduction")

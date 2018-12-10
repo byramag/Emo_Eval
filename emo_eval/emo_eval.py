@@ -56,6 +56,7 @@ def parseArgs(argv):
         "folds": 5,
         "tfidf": True,
         "embeddings": False,
+        "emoji_vectors": False,
         "clean_data": True,
         "expand_abbrs": False,
         "desmile": False,
@@ -63,33 +64,24 @@ def parseArgs(argv):
         "adjs": False
     }
 
-    long_args = ["input=", "cv", "no-tfidf", "embeddings", "no-clean", "exp-abbrs", "desmile", "rm-stopwords", "only-adjs"]
+    long_args = ["input=", "cv", "no-tfidf", "embeddings", "emoji-vectors", "no-clean", "exp-abbrs", "desmile", "rm-stopwords", "only-adjs"]
     try:
         opts, _ = getopt(sys.argv[1:], "i:s", long_args)
     except GetoptError as e:
         raise ValueError(e)
     
     for opt, arg in opts:
-        if opt in ('-i', '--input'):
-            params['file_name'] = arg
-        elif opt == '-s':
-            params['sample_size'] = float(arg)
-        elif opt == '--folds':
-            params['folds'] = int(arg)
-        elif opt == '--no-tfidf':
-            params['tfidf'] = False
-        elif opt == '--embeddings':
-            params['embeddings'] = True
-        elif opt == '--no-clean':
-            params['clean_data'] = False
-        elif opt == '--exp-abbrs':
-            params['expand_abbrs'] = True
-        elif opt == '--desmile':
-            params['desmile'] = True
-        elif opt == '--rm-stopwords':
-            params['rm_stops'] = True
-        elif opt == '--only-adjs':
-            params['adjs'] = True
+        if opt in ('-i', '--input'):    params['file_name'] = arg
+        elif opt == '-s':               params['sample_size'] = float(arg)
+        elif opt == '--folds':          params['folds'] = int(arg)
+        elif opt == '--no-tfidf':       params['tfidf'] = False
+        elif opt == '--embeddings':     params['embeddings'] = True
+        elif opt == '--emoji-vectors':  params['emoji_vectors'] = True
+        elif opt == '--no-clean':       params['clean_data'] = False
+        elif opt == '--exp-abbrs':      params['expand_abbrs'] = True
+        elif opt == '--desmile':        params['desmile'] = True
+        elif opt == '--rm-stopwords':   params['rm_stops'] = True
+        elif opt == '--only-adjs':      params['adjs'] = True
     
     return params
 
@@ -157,7 +149,8 @@ def main(argv):
     # Perform feature extraction
     x_all = feature_extraction(x_all,
         tfidf=params['tfidf'],
-        embeddings=params['embeddings'])
+        embeddings=params['embeddings'],
+        emojis=params['emoji_vectors'])
 
     # Train model
     metrics = train_crossval(x_all, y_all,
