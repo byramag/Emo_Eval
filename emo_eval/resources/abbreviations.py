@@ -131,5 +131,7 @@ ABBREVIATION_MAP = {
     "r":"are",
     "m":"am",
     "c":"see",
-    "ur":"your"
+    "ur":"your",
+    "gf":"girlfriend",
+    "bf":"boyfriend"
  }

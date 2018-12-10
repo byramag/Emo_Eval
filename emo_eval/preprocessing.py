@@ -15,6 +15,7 @@ def expand_abbreviations(sentence, abbreviation_mapping):
     Found to have minor to no impact
 
     Authors:
+        Abbie
         Keerthi
 
     Arguments:

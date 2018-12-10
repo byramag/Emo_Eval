@@ -87,12 +87,32 @@ def parseArgs(argv):
 
 
 def train_crossval(x_train, y_train, folds=5):
-    """TODO: documentation
+    """Trains Random Forest, Support Vector Machine, and Stochastic 
+    Gradient Descent classifiers and evaluates using cross validation 
+    with a given number of folds and returns the evaluation metrics 
+    for each classifier
+
+    Authors:
+        Abbie
+        Bobby
+        Keerthi
+    
+    Arguments:
+        x_train: scipy matrix of feature vectors
+            - The set of features for each training instance
+        y_train: string[]
+            - The labels for each training instance
+        folds: int
+            - The number of folds for cross validation
+    
+    Returns:
+        metrics: dictionary(classifier_name - string : scores - array of evaluation metrics)
+            - The scores for each classifier
     """
     scoring = ['accuracy', 'precision_macro', 'recall_macro', 'f1_macro', 'f1_micro']
     metrics = dict()
 
-    # # Training Naive Bayes on training data # CURRENTLY CAUSES MEMORY ERROR
+    # # Training Naive Bayes on training data # CURRENTLY CAUSES MEMORY ERROR (feature space too large)
     # print("Training Naive Bayes")
     # t = time()
     # nbClassifier = GaussianNB().fit(x_train_mat.toarray(), y_train)
