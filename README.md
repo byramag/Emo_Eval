@@ -41,7 +41,9 @@ This will create a Python virtual environment in the `./venv` directory and inst
 
 ## Run
 
-You can run the program with the settings we found to be best by executing the command `bash runit.sh` from the project directory. If you wish to run a more customized version, run `python main.py [args...]` with any of the command line parameters specified below
+You can run the program with the settings we found to be best by executing the command `bash runit.sh` from the project directory.
+
+If you wish to run a more customized version, run `python main.py [args...]` with any of the command line parameters specified below
 
 ## Command Line Flags
 
@@ -77,6 +79,6 @@ You can run the program with the settings we found to be best by executing the c
   - Wrote emo_eval.py, researched best classifier options for this problem, evaluated results from various features and model parameters
 - Bobby Best
   - Handled install & execution scripts, along with README and other repo organization
-  - 
+  - Wrote emoji vectorization
 - Revathi Keerthi
   - Worked on Preprocessing(contraction mapping, emoji/emoticon replacement), feature extraction, included SGD classifier and hyperparameter optimization.
