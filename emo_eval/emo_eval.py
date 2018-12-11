@@ -66,7 +66,7 @@ def parseArgs(argv):
 
     long_args = ["input=", "cv", "no-tfidf", "embeddings", "emoji-vectors", "no-clean", "exp-abbrs", "desmile", "rm-stopwords", "only-adjs"]
     try:
-        opts, _ = getopt(sys.argv[1:], "i:s", long_args)
+        opts, _ = getopt(sys.argv[1:], "i:s:", long_args)
     except GetoptError as e:
         raise ValueError(e)
     
