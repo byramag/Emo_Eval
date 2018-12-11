@@ -10,7 +10,7 @@ The goal of this project is to build a classifier that can recognize the general
 
 With the growing prominence of messaging platforms like WhatsApp, Twitter, and Facebook, as well as digital agents, it is important for machines understand emotions in textual conversations and provide emotionally aware responses to users.
 
-### Examples
+### Data Examples
 
 ```
 User 1: "Bad	Bad bad!"
@@ -41,7 +41,35 @@ This will create a Python virtual environment in the `./venv` directory and inst
 
 ## Run
 
-You can run the program by executing the command `bash runit.sh` from the project directory.
+You can run the program with the settings we found to be best by executing the command `bash runit.sh` from the project directory. If you wish to run a more customized version, run `python main.py [args...]` with any of the command line parameters specified below
+
+## Command Line Flags
+
+* Misc:
+  * `[-i | --input] <path>`
+    * Specify the path to the training data file
+  * `-s <percentage>`
+    * Specify a training sample size to use as a percentage in the range (0, 1]
+  * `--folds <number>`
+    * Specify the number of folds to use for cross-validation
+* Feature Extraction Component Flags (at least one must be active, tfidf by default):
+  * `--no-tfidf`
+    * Disables tf-idf vectorization
+  * `--embeddings`
+    * Enables word embedding vectorization
+  * `--emoji-vectors`
+    * Enables emoji vectorization
+* Preprocessing Component Flags:
+  * `--no-clean`
+    * Disables manual regex data cleaning
+  * `--exp-abbrs`
+    * Enables abbreviation expansion
+  * `--desmile`
+    * Enables emoticon substitution
+  * `--rm-stopwords`
+    * Enables stopword removal
+  * `--only-adjs`
+    * Enables POS trimming
 
 ## Team members
 
@@ -49,5 +77,6 @@ You can run the program by executing the command `bash runit.sh` from the projec
   - Wrote emo_eval.py, researched best classifier options for this problem, evaluated results from various features and model parameters
 - Bobby Best
   - Handled install & execution scripts, along with README and other repo organization
+  - 
 - Revathi Keerthi
   - Did some research on this task and prepared slides for stage1 presentation

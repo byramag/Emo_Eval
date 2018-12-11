@@ -19,6 +19,12 @@ def feature_extraction(samples, tfidf=True, embeddings=False, emojis=False):
     Arguments:
         samples: string list
             - The raw string training samples taken from preprocessing
+        tfidf: boolean (True)
+            - Flag to use tf-idf vectors
+        embeddings: boolean (False)
+            - Flag to use word embedding vectors
+        emojis: boolean (False)
+            - Flag to use emoji vectors
     
     Returns:
         Scipy matrix of feature vectors
@@ -36,7 +42,7 @@ def feature_extraction(samples, tfidf=True, embeddings=False, emojis=False):
     # Dimensionality reduction -- values in the range from 5 to 5000 lowers score
 
     if not tfidf and not embeddings and not emojis:
-        raise ValueError("One or more of 'tfidf' and 'embeddings' arguments must be True")
+        raise ValueError("One or more of 'tfidf', 'embeddings', and 'emojis' arguments must be True")
 
     print("Creating feature vectors"); t = time()
 

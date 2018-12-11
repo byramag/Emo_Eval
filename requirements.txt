@@ -5,3 +5,5 @@ sklearn==0.0
 tensorflow==1.11.0
 numpy>=1.15.2
 spacy>=2.0.17
+nltk==3.4
+emot==2.1

@@ -88,6 +88,8 @@ def preprocess(instances, clean_data=True, expand_abbrs=False, desmile=False, re
             - Flag to substitute emoticons with their meanings
         remove_stopwords: boolean (False)
             - Flag to remove stopwords
+        only_adjs: boolean (False)
+            - Flag to remove all non-adjective tokens
         
     
     Returns:
