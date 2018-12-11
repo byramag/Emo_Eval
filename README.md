@@ -79,4 +79,4 @@ You can run the program with the settings we found to be best by executing the c
   - Handled install & execution scripts, along with README and other repo organization
   - 
 - Revathi Keerthi
-  - Did some research on this task and prepared slides for stage1 presentation
+  - Worked on Preprocessing(contraction mapping, emoji/emoticon replacement), feature extraction, included SGD classifier and hyperparameter optimization.
