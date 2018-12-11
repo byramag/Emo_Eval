@@ -30,3 +30,4 @@ echo 'Python version check successful'
 python$p -m venv venv # Create virtual environment
 source venv/bin/activate # Activate virtual environment
 pip$p install -r requirements.txt # Install dependencies
+python -m spacy download en_core_web_lg

@@ -1,4 +1,4 @@
-{  
+ABBREVIATION_MAP = {  
     "ain't":"is not",
     "aren't":"are not",
     "can't":"cannot",
@@ -131,5 +131,7 @@
     "r":"are",
     "m":"am",
     "c":"see",
-    "ur":"your"
+    "ur":"your",
+    "gf":"girlfriend",
+    "bf":"boyfriend"
  }

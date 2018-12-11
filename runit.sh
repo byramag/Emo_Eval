@@ -3,4 +3,4 @@
 #   and runs the Python program
 
 source venv/bin/activate
-python emo_eval.py
+python main.py

@@ -13,101 +13,106 @@ Author: Abbie Byram
 #   - Naive Bayes baseline
 #   - Neural Network
 
-import re, sys, json
-from time import time
+import sys
 import numpy as np
 import pandas as pd
-import spacy
+from time import time
 from pprint import pprint
-from sklearn.model_selection import train_test_split, cross_validate, cross_val_score
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from sklearn.decomposition import PCA, TruncatedSVD
+from getopt import getopt, GetoptError
 from sklearn import svm
 from sklearn.linear_model import SGDClassifier
-from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.ensemble import RandomForestClassifier
-from scipy.sparse import hstack
-#from pandas_ml import ConfusionMatrix
+from sklearn.decomposition import PCA, TruncatedSVD
+from sklearn.naive_bayes import GaussianNB, MultinomialNB
+from sklearn.model_selection import train_test_split, cross_validate, cross_val_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-from nltk.tokenize import TweetTokenizer 
-from nltk.stem import WordNetLemmatizer
-import nltk
-nltk.download('wordnet')
 
 from .preprocessing import preprocess
+from .feature_extraction import feature_extraction
 
 
-def feature_extraction(samples):
-    """TODO: documentation
-    """
-  # Creating bag of words feature vectors from training and test data
-  # countBoW = CountVectorizer() # add stopword removal or ngrams with: ngram_range=(1,2), stop_words='english'
+def parseArgs(argv):
+    """Takes in args from sys.argv and checks for and returns
+    whatever parameters have been supplied, returning defaults
+    for ones that haven't
+
+    Authors:
+        Bobby
     
-    # stop words -- lowers score
-    # norm='l1' -- lowers score
-    # ngram_range (1,1), (1,3), (1,4), (1,5) -- lowers score
-    # min_df, max_df -- betters score, gives lower dimension
-    # sublinear_tf=True -- slighty betters score
-    # TweetTokenizer -- slighty betters score
-    # WordNetLemmatizer -- minor or no impact
-    # Dimensionality reduction -- values in the range from 5 to 5000 lowers score
+    Arguments:
+        argv: sys.argv
+    
+    Returns:
+        file_name: string
+            - The path to the training data
+        sample_size: float (0,1]
+            - Percentage of sample set to randomly sample
+    """
+    argv = argv[1:]
 
-    nlp = spacy.load('en_core_web_lg')
+    params = {
+        "file_name": r"data/train.txt",
+        "sample_size": 1,
+        "folds": 5,
+        "tfidf": True,
+        "embeddings": False,
+        "emoji_vectors": False,
+        "clean_data": True,
+        "expand_abbrs": False,
+        "desmile": False,
+        "rm_stops": False,
+        "adjs": False
+    }
 
-    print("\tGenerating spacy documents for samples...", end="", flush=True); t= time()
-    docs = [nlp(x) for x in samples]
-    print("finished in {:.3f}s".format(time()-t))
-
-    print("\tExtracting adjectives...", end="", flush=True); t= time()
-    for i, sample in enumerate(samples):
-        sample = [token for token in docs[i] if token.pos_ == 'ADJ']
-    print("finished in {:.3f}s".format(time()-t))
-
-    print("\tCalculating tf-idf vectors...", end="", flush=True); t= time()
-    tw = TweetTokenizer()
-    wnl = WordNetLemmatizer()
-    tfidf_vectors = TfidfVectorizer(
-        ngram_range=(1,2),
-        min_df=10,
-        max_df=0.95,
-        sublinear_tf=True,
-        norm='l2', 
-        smooth_idf=True,
-        tokenizer=lambda x:[wnl.lemmatize(t) for t in tw.tokenize(x)]
-    ).fit_transform([" ".join([token.text for token in s]) for s in samples])
-    print("finished in {:.3f}s".format(time()-t))
-
-    print("\tCalculating word embedding vectors...", end="", flush=True); t= time()
-    word_embeddings = [x.vector for x in samples]
-    print("finished in {:.3f}s".format(time()-t))
-
-    print("\tConcatenating matrices...", end="", flush=True); t= time()
-    x_train_mat = hstack([tfidf_vectors, word_embeddings])
-    print("finished in {:.3f}s".format(time()-t))
-
-    # # Dimensionality reduction - THIS CURRENTLY GIVES BAD RESULTS
-    # print("Dimensionality reduction")
-    # t = time()
-    # svd = TruncatedSVD(n_components=300)
-    # x_train_reduced = svd.fit_transform(x_train_mat)
-    # x_test_reduced = svd.fit_transform(x_test_mat)
-    # # pca = PCA(n_components=300)
-    # # x_train_reduced = pca.fit_transform(x_train_mat)
-    # # x_test_reduced = pca.fit_transform(x_test_mat)
-    # print("Dimensionality reduction finished in %0.3fsec\n" % (time()-t))
-
-    # print (pd.DataFrame(data=x_train_mat.toarray(), columns=tfidfBoW.get_feature_names()))
-
-    return x_train_mat
+    long_args = ["input=", "cv", "no-tfidf", "embeddings", "emoji-vectors", "no-clean", "exp-abbrs", "desmile", "rm-stopwords", "only-adjs"]
+    try:
+        opts, _ = getopt(sys.argv[1:], "i:s:", long_args)
+    except GetoptError as e:
+        raise ValueError(e)
+    
+    for opt, arg in opts:
+        if opt in ('-i', '--input'):    params['file_name'] = arg
+        elif opt == '-s':               params['sample_size'] = float(arg)
+        elif opt == '--folds':          params['folds'] = int(arg)
+        elif opt == '--no-tfidf':       params['tfidf'] = False
+        elif opt == '--embeddings':     params['embeddings'] = True
+        elif opt == '--emoji-vectors':  params['emoji_vectors'] = True
+        elif opt == '--no-clean':       params['clean_data'] = False
+        elif opt == '--exp-abbrs':      params['expand_abbrs'] = True
+        elif opt == '--desmile':        params['desmile'] = True
+        elif opt == '--rm-stopwords':   params['rm_stops'] = True
+        elif opt == '--only-adjs':      params['adjs'] = True
+    
+    return params
 
 
 def train_crossval(x_train, y_train, folds=5):
-    """TODO: documentation
+    """Trains Random Forest, Support Vector Machine, and Stochastic 
+    Gradient Descent classifiers and evaluates using cross validation 
+    with a given number of folds and returns the evaluation metrics 
+    for each classifier
+
+    Authors:
+        Abbie
+        Bobby
+        Keerthi
+    
+    Arguments:
+        x_train: scipy matrix of feature vectors
+            - The set of features for each training instance
+        y_train: string[]
+            - The labels for each training instance
+        folds: int
+            - The number of folds for cross validation
+    
+    Returns:
+        metrics: dictionary(classifier_name - string : scores - array of evaluation metrics)
+            - The scores for each classifier
     """
     scoring = ['accuracy', 'precision_macro', 'recall_macro', 'f1_macro', 'f1_micro']
     metrics = dict()
 
-    # # Training Naive Bayes on training data # CURRENTLY CAUSES MEMORY ERROR
+    # # Training Naive Bayes on training data # CURRENTLY CAUSES MEMORY ERROR (feature space too large)
     # print("Training Naive Bayes")
     # t = time()
     # nbClassifier = GaussianNB().fit(x_train_mat.toarray(), y_train)
@@ -137,39 +142,44 @@ def train_crossval(x_train, y_train, folds=5):
     return metrics
 
 
-def main(train_file, sample_size=1, folds=5):
+def main(argv):
     t0 = time()
+
+    print("Parsing command line args...", end="", flush=True); t = time()
+    params = parseArgs(argv)
+    print("finished %0.3fsec\n" % (time()-t))
 
     # Reading training file into dataframe
     print("Reading train file"); t = time()
-    instances = pd.read_csv(train_file, sep='\t', header=0)
+    instances = pd.read_csv(params['file_name'], sep='\t', header=0)
     print("Finished reading train file in %0.3fsec\n" % (time()-t))
 
     print("Sampling training data"); t = time()
-    instances = instances.sample(frac=sample_size)
+    instances = instances.sample(frac=params['sample_size'])
     print("Finished sampling training data in %0.3fsec\n" % (time()-t))
 
-    print("Preprocessing data"); t = time()
-    x_all, y_all = preprocess(instances)
-    print("Finished preprocessing in %0.3fsec\n" % (time()-t))
+    # Apply preprocessing
+    x_all, y_all = preprocess(instances,
+        clean_data=params['clean_data'],
+        expand_abbrs=params['expand_abbrs'],
+        desmile=params['desmile'],
+        remove_stopwords=params['rm_stops'],
+        only_adjs=params['adjs'])
 
-    print("Creating feature vectors"); t = time()
-    x_all = feature_extraction(x_all)
-    print("Creating feature vectors finished in %0.3fsec\n" % (time()-t))
+    # Perform feature extraction
+    x_all = feature_extraction(x_all,
+        tfidf=params['tfidf'],
+        embeddings=params['embeddings'],
+        emojis=params['emoji_vectors'])
 
-    metrics = train_crossval(x_all, y_all, folds)
+    # Train model
+    metrics = train_crossval(x_all, y_all,
+        folds=params['folds'])
 
     print("Total time for pipeline: %0.3fsec\n" % (time()-t0))
-
     pprint(metrics)
+    return metrics
+
 
 if __name__ == '__main__':
-    # Taking arg of file name, if no arg given, assumes train file is in the `data/` directory
-    file_name = r"data/train.txt"
-    sample_size = 1
-    if len(sys.argv) > 1:
-        file_name = sys.argv[1]
-    if len(sys.argv) > 2:
-        sample_size = float(sys.argv[2])
-    
-    main(file_name, sample_size=sample_size)
+    main(sys.argv)
